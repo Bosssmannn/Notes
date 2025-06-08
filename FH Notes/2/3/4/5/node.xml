@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="5" master_id="0" name="Aut, Passwörter und One-Time Passwörter" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1749377765" ts_lastsave="1749402511">
+    <rich_text weight="heavy">1. Wie funktioniert Benutzerauthentifizierung?</rich_text>
+    <rich_text>
+   1) Schritt 1: Der Benutzer präsentiert dem authentifizierenden System eine ID 
+   2) Schritt 2: Der Benutzer präsentiert oder generiert Authentisierungsinformationen die beweisen dass er tatsächlich die mit dieser ID verknüpfte Person ist und das authentifzierende System prüft die Authentisierungsinformationen     
+</rich_text>
+    <rich_text weight="heavy">2. Wie funktioniert Digital Identity Model (NIST) erklären</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">3. Welche Faktoren zur Authentisierung gibts es?</rich_text>
+    <rich_text>
+   1) etwas das ich weiß
+   2) etwas das ich habe 
+   3) etwas das ich bin
+</rich_text>
+    <rich_text weight="heavy">4. Was sind keine Faktoren zur digitalen Authentisierung</rich_text>
+    <rich_text>
+   1) etwas das ich weiß und andere auch
+   2) etwas das ich habe aber kein Geheminis ist 
+   3) etwas das ich bin aber leicht kopieret werden kann
+</rich_text>
+    <rich_text weight="heavy">5. Was ist eine MFA?</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">6. Was ist eine 2FA</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">7. Kann Biometrie verwendet werden um eine Person zu verifzieren?</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">8. Ist Biometrie ein Geheminis und kann als alleiniger Faktor im NISR verwendet werden</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">9. Was sind die Empfehlungen/Anforderungen an Passwörter laut NIST</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">10. Wie sollten die Passwörter laut NIST gespeichert werden?</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">11. Was ist ein Activation Secret oder PIN?</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">12. Was sind die Anforderungen an Activation Secrets oder PINS?</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">13. Was ist ein Look-Up-Secret</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">14. Was passiert wenn man Handy/Spezialhardware verliert?</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">15. Was sind die Anforderungen an Secrets?</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">16. Welche Angriffe machen die Secrets unmöglich?</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">17. Was ist ein One-Time-Passwort?</rich_text>
+    <rich_text>
+18. Welche Angriffe machen die One-Time-Passwörter unmöglich?
+19. Was ist Lamport OTP Schema (1981) und wie funktioniert es?
+20. Wie funktioneirt die Registrierung beim Lamport OTP Schema?
+21. Wie funktioniert die Authentisierung beim Lamport OTP Schema?
+22. Was ist OATH HOTP?
+23. Wie funktioniert die Registreirung und Authentisierung beim OATH HOTP?
+24. Wie funktioniert die Resynchornisierung beim OATH HOTP?
+25. Was ist ein Look-Ahead-Window?
+26. Was ist OATH TOTP?
+27. Wie funktioniert die Registrierung und Authentisierung beim OATH TOTP?
+28. Wie funktioniert OATH TOTP Resynchroniesierung 
+29. Was ist eine Resynchronisierung?
+30. Was ist eine Look-Back and Look-Ahead beim OATH TOTP
+31. Wie kann man die HOTPs und TOTPs generieren?
+32. Was sind die Gemeinsamkeiten und Unterschiede dieser Authenticator Apps
+33. Was ist ein OTP?
+34. Wie funktionieren OTPS am Yubi Key?
+35. </rich_text>
+  </node>
+</cherrytree>
