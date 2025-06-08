@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
-  <node unique_id="5" master_id="0" name="Aut, Passwörter und One-Time Passwörter" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1749377765" ts_lastsave="1749402511">
+  <node unique_id="5" master_id="0" name="Aut, Passwörter und One-Time Passwörter" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1749377765" ts_lastsave="1749404047">
     <rich_text weight="heavy">1. Wie funktioniert Benutzerauthentifizierung?</rich_text>
     <rich_text>
    1) Schritt 1: Der Benutzer präsentiert dem authentifizierenden System eine ID 
