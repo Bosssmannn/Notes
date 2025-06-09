@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="9" master_id="0" name="Verfahren" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1749446209" ts_lastsave="1749446766">
+    <rich_text>1. Welche biometrische Verfahren kennst du und erkläre sie in kürze
+2. Welche Basistypen von Fingerabdrücken kennst du?
+3. Was sind Minuzien? und welche Grundformen von Minuzien gibt es?
+4. Wie funktionieren Optische Sensoren kurz?
+5. Wie funktionieren Kapazitive Sensoren?
+6. Wie funktionieren Ultraschallsensoren?
+7. Welche Arten von Sensoren kennst du?
+8. Warum wird die Übereinstimmung zwischen Sample und Template nie 100% gegeben?
+9. Wie heißt der Region im Gehirn für die Gesichtserkennung?
+10. Wie läuft Automatische Gesichtserkennung ab?
+11. Wie läuft die Vorverarbeitung ab?
+12. Was sind die Stärken und Herausforderungen von Gesichtserkennung?
+13. Wie funktioniert die Signalerfassung grob beim Iriserkennung?
+14. Was sind die Stärken und Herausforderungen von Iriserkennung?</rich_text>
+  </node>
+</cherrytree>

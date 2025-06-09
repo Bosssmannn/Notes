@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="10" master_id="0" name="Machine Learning" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1749446811" ts_lastsave="1749446882">
+    <rich_text>1. Was ist Machine Learning grob gesagt?
+2. Was sind die Challenges von Machine Learning?
+3. Welche Arten des Lernens gibts es beim Machine Learning?
+4. Was verstehst du unter Perzeptron?</rich_text>
+  </node>
+</cherrytree>

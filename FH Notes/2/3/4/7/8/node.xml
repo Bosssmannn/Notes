@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="8" master_id="0" name="Biometrie" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1749446197" ts_lastsave="1749446209">
+    <rich_text>1. Was ist eine biometrische Authentifizierung 
+2. Wie viele verschiedene Körpermerkmale hat man?
+3. Welche Merkmale müssen zur Authentifzizierung genügen?
+4. Was ist der Unterschied zwischen dynamischen und statischen Biometrischen Merkmalen
+5. Sind Biometrische Merkmale phänotypische Merkmale, was heißt das?
+6. Wie funktioniert Enrollment beim generischen biometrischen Systemen?
+7. Wie funktioniert Authentifizierung?
+8. Was ist der Unterschied zwischen Identifizierung und Verifizierung?
+9. Wie läuft der Mustervergleich und Entscheidung Prozess ab?
+10. Welche Arten von Versuchen kennst du?
+11. Wie ist die Häufigkeitsverteilung?
+12. Erkläre die Entscheidungsmatrix und wie funktioniert diese?
+13. Was verstehst du unter FAR und FRR?
+14. Was verstehst du unter EER?
+15. Was ist das Problem und die Lösung für die Bewertung der Darstellung im FAR-FFR-Diagramm
+16. Was verstehst du unter DET?
+17. Was verstehst du unter ROC?
+18. Was ist die Bedeutung von FAR?
+19. Was verstehst du unter FTE?</rich_text>
+  </node>
+</cherrytree>
