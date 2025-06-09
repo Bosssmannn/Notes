@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="13" master_id="0" name="Smartcards" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1749448331" ts_lastsave="1749450180">
+    <rich_text scale="h2" weight="heavy">Smartcard - Grundlagen</rich_text>
+    <rich_text>
+1. Was sind die Vorteile von manipulationssicheren Chips gegenüber von anderen Speichermedien?
+2. Welche zusätzlichen Komponenten gibt es für Karten? Display, Fingerprinsensor
+3. Smartcard Speicher inkl. Größenordnung
+4. Allgemiene Fragen zur Security Hardware von Smart Cards und deren Verwendugszweck (Slide 15)
+ 
+</rich_text>
+    <rich_text scale="h2" weight="heavy">Smartcard Betriebssysteme Grundlagen</rich_text>
+    <rich_text>
+1.  Was sind die Eigenschaften und Aufgaben eines Smart Card Betriebbssystems?
+2. Welche Arten von Smartcard Betriebssystemen kennst du?
+3. Erkläre Internal Authenticate Verfahren
+4. Erkläre External Authenticate Verfahren
+5. Erkläre Mutual Authenticate Verfahren
+
+</rich_text>
+    <rich_text scale="h2" weight="heavy">PC/SC</rich_text>
+    <rich_text>
+1. Auf welchen PC Betriebssystemen wird PC/SC bzw. PC/SC Lite unterstützt?
+2. Was sind die Unterschiede zwischen Vendor-specifif PC/SC driver und CCID driver?
+
+</rich_text>
+    <rich_text scale="h2" weight="heavy">Smart Card Middleware</rich_text>
+    <rich_text>
+1. Allgemeine Fragen zu Smart Card Middleware (Slide 3-11)
+2. Was sind typische Smart Card Middleware Anwendungen?
+3. Welche standarisierten Crypto Interfaces können Sie auf einem Windows Rechner einsetzten?
+4. Welche standardisiereten Crypt Interfaces können Sie auf einem Linxu Rechner einsetzen?</rich_text>
+  </node>
+</cherrytree>

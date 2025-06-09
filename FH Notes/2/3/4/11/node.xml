@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
-  <node unique_id="11" master_id="0" name="Out-Of-Band-Authentifizierung" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1749446938" ts_lastsave="1749446938"/>
+  <node unique_id="11" master_id="0" name="Out-Of-Band-Authentifizierung" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1749446938" ts_lastsave="1749447872">
+    <rich_text>1. Was versteht man unter Out-of-Band?
+2. Warum gibt es einen zweiten separaten Kommunikationskanal?
+3. Was verstehst du unter Out-of-Band-Device?
+4. Wo endet der zweite Kommunikationskanal?
+5. Welche Varianten von OOB kennst du und wie funktionieren diese?
+6. Welche Anforderungen an den sekundären Kanal gibt es und wie funktionieren diese?
+7. Welche Beispiele für sekundäre Kanäle kennst du?
+8. Wie Arten von Etablieren des sekundären Kanals gibt es und wie funktionieren diese?
+9. Was vertehst du unter Geheimnis im Kontext von OOB?
+10. Sind 2 PITM-Angriffe notwendig?
+11. Bietet OOB Schutz gegen Phishing?
+12. Was sind die Probleme mitm SMS als OOB-Kanal?
+13. Was ist die Lösung für SMS als OOB-Kanal?
+14. Welche proprietäre Lösungen gibt es?
+15. Bieten Authentication-Service-Provider OOB an? welche Anbieter kennst du?
+16. Was verstehst du unter On-Premise Authentication-Lösungen und beinhalten sie OOB?
+17. Erkläre Super Gluu
+18. Was sind die Vorteile und Nachteile von E-Mail als OOB-Kanal?
+</rich_text>
+  </node>
 </cherrytree>

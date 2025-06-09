@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="12" master_id="0" name="Single Sing-On" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1749447829" ts_lastsave="1749448331">
+    <rich_text>1. Welche Single Sign-On Methoden kennst du und wie funktionieren diese grob?
+2. Wie funktioniert Kerberos?
+3. Wie erfolgt die Authentifizierungsservice in Kerberos?
+4. Was sind die Komponenten von Kerberos?
+5. Welche Kerberos Server gibts es und was machen sie?
+6. Wie funktioniert das Setup und wie werden die Tickets ausgetauscht?
+7. Wie funktioniert die Authentifizierung in Kerberos?
+8. Wie funktioniert Ticket Granting in Kerberos?
+9. Wie wird Zugriff auf ein Service gegeben? 
+10. Was verstehst du unter SAML2?
+11. Wie werden Informationen in SAML2 ausgetauscht?
+12. Was beinhaltet eine Assertion?
+13. Wie erfolgt die Übermittlung von Assertions?
+14. Was verstehst du unter OIDC?
+15. Was ist der Unterschied zwischen SAML vs OpenID Connect Authorization Code Flow?
+16. Was sind die Unterschiede in der Verwendung für SAML2 und OIDC?
+17. </rich_text>
+  </node>
+</cherrytree>
