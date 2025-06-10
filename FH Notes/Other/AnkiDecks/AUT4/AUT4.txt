@@ -79,37 +79,57 @@ Was ist Smart Card Middleware und welche Aufgaben erfüllt sie?	"Ermöglicht Zug
 Was sind typische Anwendungen für Smart Card Middleware?	Digitale Signatur, Authentifizierung (z. B. Login, VPN), E-Mail-Verschlüsselung, Zugriff auf Webdienste, Verschlüsselung von Dateien.	
 Welche standardisierten Crypto Interfaces kann man auf einem Windows-Rechner einsetzen?	"MS-CSP, CNG (Cryptography Next Generation), PKCS#11, Minidriver (Smart Card Base CSP)."	
 Welche standardisierten Crypto Interfaces kann man auf einem Linux-Rechner einsetzen?	"PKCS#11, OpenSC, evtl. CT-API bei bestimmten Anwendungen."	
-Wie funktioniert Benutzerauthentifizierung?	1) Der Benutzer präsentiert dem System seine ID. 2) Der Benutzer liefert oder erzeugt Authentisierungsinformationen, die das System überprüft.	
-Wie funktioniert das Digital Identity Model (NIST)?	Unterscheidet zwischen Identifizierung, Authentisierung und Attributprüfung gemäß NIST SP 800-63-3.	
+Wie funktioniert Benutzerauthentifizierung?	Identifizierung: Der Benutzer präsentiert dem System seine ID.<br>Verifizierung: Der Benutzer liefert oder erzeugt Authentisierungsinformationen, die das System überprüft.	
+Wie funktioniert das Digital Identity Model (NIST)?	"<li><div>Eine Person (Applicant) beantragt eine digitale Identität beim Credential Service Provider (CSP).</div>
+</li>
+<li>
+<div>Der CSP prüft die Identität (Enrollment &amp; Identity Proofing) und stellt Credentials aus → die Person wird zum Subscriber.</div>
+</li>
+<li>
+<div>Wenn der Subscriber sich bei einem System anmelden will, wird er zum Claimant.</div>
+</li>
+<li>
+<div>Der Claimant authentifiziert sich beim Verifier, z. B. durch Passwort, OTP oder Signatur.</div>
+</li>
+<li>
+<div>Der Verifier prüft die Authentizität der Credentials und sendet eine Authentication Assertion an die Relying Party (RP).</div>
+</li>
+<li>
+<div>Die RP gewährt bei erfolgreicher Prüfung Zugang → die digitale Identität wurde verifiziert und kann verwendet werden</div></li><li><div>.<img src=""paste-d44d7a36ab8976a741d0393944c3bc417633073b.jpg""></div></li>"	
 Welche Faktoren zur Authentisierung gibt es?	Etwas, das man weiß (z. B. Passwort), etwas, das man hat (z. B. Token), etwas, das man ist (z. B. Biometrie).	
 Was sind keine Faktoren zur digitalen Authentisierung?	Informationen, die öffentlich sind, kein Geheimnis enthalten oder leicht kopiert werden können.	
 Was ist eine MFA?	Multi-Faktor-Authentisierung mit mehreren unterschiedlichen Faktoren.	
 Was ist eine 2FA?	Zwei unterschiedliche Faktoren zur Authentisierung.	
 Kann Biometrie verwendet werden, um eine Person zu verifizieren?	Ja, Biometrie kann zur Verifizierung der physischen Anwesenheit verwendet werden.	
 Ist Biometrie ein Geheimnis und kann als alleiniger Faktor im NIST verwendet werden?	Nein, Biometrie ist kein Geheimnis und reicht allein nicht im NIST-Modell.	
-Was sind die Empfehlungen/Anforderungen an Passwörter laut NIST?	Min. 8 Zeichen (besser 15), max. 64, keine Zusammensetzungspflicht, ASCII/Unicode erlaubt, keine erzwungenen Wechsel.	
+Was sind die Empfehlungen/Anforderungen an Passwörter laut NIST?	Min. 8 Zeichen (besser 15), max. 64,<br>keine Zusammensetzungspflicht,<br>ASCII/Unicode erlaubt, <br>keine erzwungenen Wechsel.<br>Keine Passwort-Hints<br>„Beliebte“ Passwörter nicht erlauben	
 Wie sollten Passwörter laut NIST gespeichert werden?	Gehasht mit Passwort-Hashing-Schema, gesalzen mit mind. 32 Bit Salt, optional zusätzlicher geheimer Salt im HSM.	
 Was ist ein Activation Secret oder PIN?	Ein Wissen, das einen anderen Faktor (z. B. Schlüssel) schützt.	
 Was sind die Anforderungen an Activation Secrets oder PINs?	Mind. 4–6 Zeichen, beliebte PINs verboten, max. 10 Fehlversuche.	
 Was ist ein Look-Up-Secret?	Ein günstiges Besitzelement (z. B. Grid-Karte), unabhängig von Handy/Spezialhardware.	
 Was passiert, wenn man Handy/Spezialhardware verliert?	Look-Up-Secret erlaubt dennoch Authentisierung ohne das verlorene Gerät.	
 Was sind die Anforderungen an Secrets?	Mind. 20 Bit Entropie (~6 Ziffern), sicherer Übertragungskanal, nur einmal verwendbar, Login-Versuche begrenzen.	
-Welche Angriffe machen die Secrets unmöglich?	Phantom-in-the-Middle (PITM)-Angriffe.	
+Welche Angriffe machen die Look up Secrets unmöglich?	Replay-Angriffe sind nicht möglich.	
 Was ist ein One-Time-Passwort?	Ein Passwort, das aus einem symmetrischen Schlüssel generiert wird und nur einmal gültig ist.	
 Welche Angriffe machen One-Time-Passwörter unmöglich?	Replay-Angriffe nicht möglich, aber PITM-Angriffe bleiben möglich.	
-Was ist das Lamport OTP Schema (1981) und wie funktioniert es?	Hash-Kette: p₀ = Hᵗ(K), pᵢ = Hᵗ⁻ⁱ(K); Authentisierung durch Überprüfung von H(pᵢ) = vorheriger Wert.	
-Wie funktioniert die Registrierung beim Lamport OTP Schema?	K wählen, p₀ = Hᵗ(K) berechnen und an Verifier übertragen, Verifier speichert p0 als p	
-Wie funktioniert die Authentisierung beim Lamport OTP Schema?	pᵢ = Hᵗ⁻ⁱ(K) senden, Verifier prüft H(pᵢ) = p und speichert neuen pᵢ.	
+Was ist das Lamport OTP Schema (1981) und wie funktioniert es?	"Hash-Kette: p₀ = Hᵗ(K), pᵢ = Hᵗ⁻ⁱ(K); Authentisierung durch Überprüfung von H(pᵢ) = vorheriger Wert.<br>Registrierung:<br><img src=""paste-a77c9180bd5a8ceed959ce857b23059a624947a5.jpg"">"	
+Wie funktioniert die Registrierung beim Lamport OTP Schema?	"K wählen, p₀ = Hᵗ(K) berechnen und an Verifier übertragen, Verifier speichert p0 als p<br><img src=""paste-3fd7f777ea7b42e16c3c745f065fd8e8d9883a03.jpg"">"	
+Wie funktioniert die Authentisierung beim Lamport OTP Schema?	"pᵢ = Hᵗ⁻ⁱ(K) senden, Verifier prüft H(pᵢ) = p und speichert neuen pᵢ.<br><img src=""paste-c41f0b6ecc9b3293ccb2e9d4c65a7d6f5b467450.jpg"">"	
 Was ist OATH HOTP?	HMAC-basierter OTP-Algorithmus mit Counter-Wert (HOTP = Truncate(HMAC-SHA1(K, C))).	
-Wie funktioniert die Registrierung und Authentisierung beim OATH HOTP?	K und Counter C werden geteilt; HOTP wird gesendet; Verifier prüft und erhöht Counter.	
-Wie funktioniert die Resynchronisierung beim OATH HOTP?	Verifier prüft s HOTP-Werte im Voraus (Look-Ahead-Window) zur Synchronisation.	
+Wie funktioniert die Registrierung und Authentisierung beim OATH HOTP?	"K und Counter C werden geteilt; HOTP wird gesendet; Verifier prüft und erhöht Counter.<br><img src=""paste-dd444725c5dc972cdca2eae8f01548eca89eb3a0.jpg"">"	
+Wie funktioniert die Resynchronisierung beim OATH HOTP?	"Verifier prüft s HOTP-Werte im Voraus (Look-Ahead-Window) zur Synchronisation.<br><img src=""paste-c50b903afb9cb6076ba5f486aa00c98cf281c949.jpg"">"	
 Was ist ein Look-Ahead-Window?	Bereich von s Werten, die geprüft werden, um asynchrone Counter zu erkennen.	
 Was ist OATH TOTP?	Zeitbasierter OTP-Algorithmus: TOTP = HOTP(K, T), T = (Unixzeit – T₀)/X.	
-Wie funktioniert die Registrierung und Authentisierung beim OATH TOTP?	K, T₀ und Zeitintervall X werden geteilt; TOTP berechnet anhand aktueller Zeit.	
-Wie funktioniert OATH TOTP Resynchronisierung?	Verifier prüft OTPs für Look-Back und Look-Ahead Zeitfenster; speichert Zeitabweichung.	
+Wie funktioniert die Registrierung und Authentisierung beim OATH TOTP?	"K, T₀ und Zeitintervall X werden geteilt; TOTP berechnet anhand aktueller Zeit<br><img src=""paste-ba914c14775a8ffdec1ecf62cd4ae2280f923af2.jpg"">"	
+Wie funktioniert OATH TOTP Resynchronisierung?	"Verifier prüft OTPs für Look-Back und Look-Ahead Zeitfenster; speichert Zeitabweichung.<br><img src=""paste-e110b8f0328e685db198ae7112a37f6ba0d1122a.jpg"">"	
 Was ist eine Resynchronisierung?	Abgleich von Counter (HOTP) oder Zeitwerten (TOTP) zwischen Client und Verifier.	
 Was ist eine Look-Back and Look-Ahead beim OATH TOTP?	Prüfung mehrerer Zeitfenster um aktuellen T-Wert zur Toleranz von Zeitabweichungen.	
 Wie kann man HOTPs und TOTPs generieren?	HOTP = Truncate(HMAC-SHA-1(K, Counter)), TOTP = HOTP(K, T) mit T aus aktueller Zeit berechnet.	
-Was sind die Gemeinsamkeiten und Unterschiede dieser Authenticator Apps?	Gemeinsam: QR-Code-Import, TOTP/HOTP-Support. Unterschiede: Speicherort, Cloud-Sync, Multi-Device-Funktion.	
+Was sind die Gemeinsamkeiten und Unterschiede dieser Authenticator Apps?	"Gemeinsamkeiten
+Das Shared Secret K wird in der Regel über einen QR-Code übertragen (oder als
+alphanumerischer String eingegeben).<br><br>Unterschiede
+<br>Wie/wo werden die Shared Secrets (sicher?) gespeichert?
+<br>Ist eine Synchronisation über mehrere Geräte möglich?
+<br>(Wie) werden Backups erstellt?"	
 Was ist ein OTP?	Ein einmalig gültiges Passwort, erzeugt durch Algorithmus aus gemeinsamem Schlüssel.	
 Wie funktionieren OTPs am YubiKey?	Zwei Slots für HOTP/TOTP/Challenge-Response, OTP-Generierung via Berührung, bis zu 32 Secrets via Yubico Authenticator.	
