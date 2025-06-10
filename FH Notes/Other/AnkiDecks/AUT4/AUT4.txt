@@ -1,0 +1,115 @@
+#separator:tab
+#html:true
+#tags column:3
+Was ist FIDO2?	FIDO2 ist ein moderner Standard, der passwortlose Anmeldung im Web ermöglicht. Er besteht aus WebAuthn (für Webseiten) und CTAP2 (für Authenticator-Geräte wie YubiKeys oder Smartphone-Sensoren).	
+Was ist das Ziel von FIDO2?	Das Ziel ist, sichere, phishing-resistente und benutzerfreundliche Authentifizierung ohne Passwörter zu ermöglichen.	
+Was versteht man unter FIDO “alt”?	Das sind ältere Standards: FIDO U2F (für 2FA mit z. B. YubiKey) und FIDO UAF (für passwortlose Anmeldung auf mobilen Geräten).	
+Was ist der Unterschied zwischen FIDO alt und FIDO2?	FIDO alt war begrenzt auf Second-Factor oder nur mobile Geräte. FIDO2 erlaubt echte passwortlose Logins auf jeder Plattform, dank WebAuthn + CTAP2.	
+Was sind die FIDO2-Komponenten und wie funktionieren diese?	Client (Browser/App) ruft WebAuthn auf; Authenticator (z. B. YubiKey, Fingerabdrucksensor) erstellt Signaturen; Relying Party (Server) prüft Signatur mit dem Public Key.	
+Welche Arten von Authenticators gibt es?	Platform Authenticators: fest im Gerät; Roaming Authenticators: mobil &amp; übertragbar (z. B. USB-Stick).	
+Was ist der Unterschied zwischen Platform und Roaming Authenticators?	Platform: fest eingebaut (nur lokal nutzbar); Roaming: flexibel mit mehreren Geräten nutzbar.	
+Was versteht man unter Public-Key-Kryptographie?	Ein Verfahren mit einem privaten Schlüssel (bleibt geheim im Gerät) und einem öffentlichen Schlüssel (geht zum Server).	
+Was bedeuten „sicherer Schlüsselspeicher“ und „Challenge-Response-Authentication“?	Private Keys werden sicher im Gerät gespeichert. Bei Login schickt der Server eine Challenge, die das Gerät mit dem Private Key signiert.	
+Wie funktioniert die Registrierung bei FIDO2?	1. Server sendet Challenge; 2. Benutzer bestätigt (z. B. Touch); 3. Gerät erstellt Keypair; 4. Public Key geht zurück zum Server; 5. Server speichert die Daten.	
+Was sind die Voraussetzungen für FIDO2?	Browser/App mit WebAuthn; Authenticator mit CTAP2; HTTPS-Verbindung.	
+Ist Tracking eine Voraussetzung für FIDO2?	Nein. FIDO2 wurde so entwickelt, dass Geräte nicht eindeutig zugeordnet werden können (kein individuelles Tracking über AAGUID).	
+Erkläre den Ablauf der Registrierung in FIDO2.	Siehe Frage 10 – es ist die genaue Schrittfolge der Registrierung.	
+Was sind die Voraussetzungen für die Authentifizierung in FIDO2?	Erfolgreiche vorherige Registrierung; Public Key und Credential ID auf dem Server; Private Key auf dem Authenticator.	
+Was versteht man unter Relying Party Server? Und was tut er?	Das ist der Webserver der Anwendung. Er verwaltet Benutzerkonten, erstellt Challenges, prüft Signaturen und speichert die Public Keys.	
+Erkläre den Ablauf der Authentifizierung in FIDO2.	1. Server sendet Challenge; 2. Authenticator signiert mit Private Key; 3. Client sendet Signatur zurück; 4. Server prüft → Login bei Erfolg.	
+Was ist der Unterschied zwischen User Presence und User Verification?	User Presence: einfache Aktion (z. B. Touch); User Verification: Identitätsprüfung (z. B. PIN, Biometrie).	
+Was sind Platform Authenticators?	Eingebaute Sicherheitsfunktionen im Gerät, z. B. Windows Hello, Touch ID, Android Keystore.	
+Was sind Roaming Authenticators?	Externe Geräte wie YubiKey, NFC-Token, Smartphones – nutzbar auf verschiedenen Geräten.	
+Was ist der Unterschied zwischen Resident und Non-Resident Keys (YubiKey)?	Resident: Key wird im Token gespeichert; Non-Resident: Key wird dynamisch rekonstruiert über Credential ID (spart Speicher).	
+Was sind Server-side Credentials?	Verschlüsselte Schlüssel, die der Server speichern darf. Nur der passende Authenticator kann sie wieder entschlüsseln und nutzen.	
+Sind Phishing-Angriffe auf FIDO2 möglich? Ja/Nein – Erkläre.	Nein. Der Authenticator prüft die Domain (RP-ID). Ist sie nicht korrekt (z. B. Phishing-Seite), wird die Anmeldung verweigert.	
+Welche Recovery-Mechanismen gibt es bei FIDO2?	FIDO2 selbst hat keinen eingebauten Recovery. Passkeys ermöglichen Recovery über Cloud-Konten wie Apple, Google oder Microsoft.	
+Was sind Multi-Device FIDO Credentials?	Das sind Passkeys, die auf mehreren Geräten gleichzeitig funktionieren, weil sie über die Cloud synchronisiert werden.	
+Wie funktioniert Synchronisation der Private Keys? Sind sie Ende-zu-Ende verschlüsselt?	Ja. Sie werden verschlüsselt in der Cloud gespeichert und nur vom Authenticator lokal entschlüsselt – z. B. durch iCloud Keychain oder Google Passwortmanager.	
+Was sind Discoverable Credentials und warum sind sie erforderlich?	Credentials, die ohne Eingabe des Usernamens automatisch gefunden werden können – wichtig für passwortlose Logins.	
+Was ist Cross-Device Authentication und wie wird sie realisiert?	Du loggst dich auf einem Gerät ein, das Credential liegt aber auf einem anderen (z. B. Smartphone). Verbindung per QR, BLE und gesichertem Tunnel.	
+Passkeys – Sicherheit vs. Usability?	Sehr einfach nutzbar, da automatische Cloud-Sync. Sicherheit hängt von Geräteauthentifizierung (PIN/Biometrie) und Cloud-Infrastruktur ab.	
+Was ist ein Out-of-Band-Verfahren bei der Authentifizierung?	FIDO Out-of-Band ist ein zweiter, separater Kommunikationskanal zusätzlich zum primären Kanal zwischen Benutzer und Verifier.	
+Warum wird bei Out-of-Band ein zweiter Kommunikationskanal verwendet?	Zur Absicherung der Authentifizierung gegen Angriffe auf den primären Kanal.	
+Was ist ein Out-of-Band-Device und welche Rolle spielt es?	Ein Gerät, auf dem der sekundäre Kanal endet, z. B. ein Smartphone (etwas, das ich habe).	
+Wohin führt der sekundäre Kommunikationskanal beim OOB-Verfahren?	Er endet auf dem Out-of-Band-Device des Benutzers.	
+Welche Varianten des Out-of-Band-Verfahrens gibt es und wie funktionieren sie?	1. Geheimnis über sekundären Kanal, Antwort über primären. 2. Geheimnis über primären Kanal, Antwort über sekundären. 3. Geheimnisse über beide Kanäle, Benutzer bestätigt (nicht mehr empfohlen).	
+Welche Anforderungen stellt FIDO an den sekundären Kanal beim OOB-Verfahren?	Separiert: kein unautorisierter Datenaustausch. Authentisiert: Schlüssel im sicheren Speicher oder SIM. Vertraulich: Verschlüsselung oder Mobilfunk.	
+Welche konkreten Beispiele für sekundäre Kanäle im OOB-Verfahren gibt es?	SMS, Telefonat, Push-Nachricht, App-Kommunikation, E-Mail.	
+Wie kann der sekundäre Kanal beim OOB-Verfahren technisch etabliert werden?	1. Mobilfunk: Nummer übermittelt, Geheimnis via SMS. 2. OOB-App: Key-Übertragung via QR oder Keypair-Generierung. 3. E-Mail: Adresse übermittelt, Geheimnis als URL-Link.	
+Was genau ist ein Geheimnis im Kontext von Out-of-Band-Authentifizierung?	Zufällig generiertes Geheimnis mit mindestens 20 Bit Entropie, maximal 10 Minuten gültig, nur einmal verwendbar.	
+Braucht ein Angreifer zwei gleichzeitige PITM-Angriffe, um OOB zu brechen?	Nein, OOB schützt nicht automatisch vor Phishing.	
+Bietet das Out-of-Band-Verfahren Schutz gegen Phishing-Angriffe?	Nein, OOB allein schützt nicht vor Phishing-Angriffen.	
+Welche Sicherheitsprobleme gibt es bei SMS als OOB-Kanal?	SIM Swapping, SMS-Interception, SS7-Schwachstellen, Malware auf dem Gerät.	
+Wie kann man die Probleme mit SMS als Out-of-Band-Kanal lösen?	SMS sollte vermieden werden. NIST erlaubt nur eingeschränkten Einsatz. Bessere Alternativen sollten angeboten werden.	
+Welche proprietären OOB-Lösungen existieren und was ist ihr Nachteil?	PushTAN, App-basierte Verfahren – meist Closed Source, nur für bestimmte Anbieter nutzbar.	
+Welche kommerziellen Anbieter stellen Out-of-Band-Authentifizierung als Service bereit?	Authentication-Service-Provider wie Cisco Duo, Twilio Verify – bieten OOB über API oder SDK an.	
+Was sind On-Premise-Authentifizierungslösungen und enthalten sie OOB-Verfahren?	Lokal installierte Systeme wie LinOTP, Gluu, privacyIDEA, Deepnet – alle unterstützen OOB.	
+Wie funktioniert die Authentifizierung mit Super Gluu?	Enrollment: QR-Code → Keypair → Signatur an Server. Authentication: QR-Code mit Challenge → Signatur an Server.	
+Was sind Vor- und Nachteile von E-Mail als sekundärer OOB-Kanal?	+ Einfach, kein SMS-Gateway nötig. – Unsicher laut NIST (kein Besitznachweis, angreifbar in Transit, DNS-Spoofing).	
+Frage	Antwort	
+Welche Single Sign-On Methoden kennst du und wie funktionieren diese grob?	Kerberos: Authentifizierung über zentrale Server mit Tickets; SAML2: XML-basiert, Austausch von Authentifizierungsinformationen; OIDC: JSON/REST-basiert, auf OAuth 2.0 aufbauend.	
+Wie funktioniert Kerberos?	Benutzer authentifiziert sich beim Authentication Server, erhält TGT, mit dem beim Ticket Granting Server ein Ticket für den Zielservice geholt wird.	
+Wie erfolgt die Authentifizierungsservice in Kerberos?	Der Authentication Server prüft Identität und gibt ein Ticket Granting Ticket (TGT) zurück.	
+Was sind die Komponenten von Kerberos?	Authentication Server (AS), Ticket Granting Server (TGS), Clients (Benutzer) und Services.	
+Welche Kerberos Server gibts es und was machen sie?	AS: Führt Authentifizierung durch; TGS: Gibt bei gültigem TGT ein Ticket für gewünschtes Service aus.	
+Wie funktioniert das Setup und wie werden die Tickets ausgetauscht?	Jeder Principal teilt Schlüssel mit Kerberos Server; Tickets enthalten verschlüsselten Session Key, Realm, ID, Adresse, Gültigkeit, Flags.	
+Wie funktioniert die Authentifizierung in Kerberos?	Client sendet Anfrage an AS, erhält TGT und Session Key verschlüsselt mit seinem Key, nutzt TGT zur Anfrage an TGS.	
+Wie funktioniert Ticket Granting in Kerberos?	Client sendet TGT, Authenticator und gewünschte Service-ID an TGS, erhält Service-Ticket und Session Key.	
+Wie wird Zugriff auf ein Service gegeben?	Client sendet Ticket und Authenticator an Service, Service prüft und sendet verschlüsselte Antwort als Bestätigung.	
+Was verstehst du unter SAML2?	XML-basiertes Framework zum Austausch von Authentifizierungs- und Autorisierungsinformationen (Federated Identity).	
+Wie werden Informationen in SAML2 ausgetauscht?	Über Assertions mit Authentication-, Attribute- und Authorization Statements.	
+Was beinhaltet eine Assertion?	Informationen über ein Subjekt: Authentifizierung, Attribute, Autorisierungsentscheidungen.	
+Wie erfolgt die Übermittlung von Assertions?	Über Protokolle (z. B. AuthNRequest), Bindings (z. B. HTTP POST) und Profile (z. B. Web Browser SSO Profile).	
+Was verstehst du unter OIDC?	Authentifizierungsschicht auf Basis von OAuth 2.0 mit JSON und REST APIs für Web- und Mobilanwendungen.	
+Was ist der Unterschied zwischen SAML vs OpenID Connect Authorization Code Flow?	SAML: XML, schwergewichtig, kein Consent; OIDC: JSON, leichtgewichtig, mit User Consent, REST APIs.	
+Was sind die Unterschiede in der Verwendung für SAML2 und OIDC?	SAML2: Enterprise-Webanwendungen mit zentralem IdP; OIDC: Web + Mobile, Social Logins, mehrere IdPs, auch für API-Zugriff.	
+Was sind die Vorteile von manipulationssicheren Chips gegenüber von anderen Speichermedien?	Sichere Codeausführung, manipulationssichere Speicherung von Applikationsdaten, Zertifikaten, Schlüsseln; Private Keys können nicht ausgelesen werden; sichere Identifizierung/Authentifizierung mittels PIN oder Biometrie.	
+Welche zusätzlichen Komponenten gibt es für Karten?	Display, Fingerabdrucksensor (Fingerprint Sensor).	
+Wie groß ist der Speicher einer Smartcard und welche Typen gibt es?	ROM (für OS), EEPROM/Flash (persistente Daten, Apps), RAM (transiente Daten); typischer Speicherbereich: wenige KB bis max. MB-Bereich.	
+Was ist der Verwendungszweck der Security-Hardware von Smartcards?	Manipulationssichere CPU, Sensoren, verschlüsselte Speicher, Zufallszahlengeneratoren, Crypto-Co-Prozessoren; Einsatz: ePassport, SIM, Bankkarte, IoT, M2M, NFC.	
+Was sind die Eigenschaften und Aufgaben eines Smart Card Betriebssystems?	Abstraktion der Hardware, Zugriffsschutz auf Speicher und I/O, Lebenszyklusverwaltung, Dateiorganisation, kryptographische Funktionen, Schutz gegen Angriffe.	
+Welche Arten von Smartcard Betriebssystemen kennst du?	Proprietäre Systeme, offene Systeme (z. B. Java Card, MULTOS).	
+Erkläre das Internal Authenticate Verfahren.	Host sendet Challenge an Karte, Karte signiert Challenge mit privatem Schlüssel und sendet Antwort zur Verifizierung an Host.	
+Erkläre das External Authenticate Verfahren.	Karte sendet Challenge an Host, Host signiert mit privatem Schlüssel und Karte prüft Antwort mit gespeichertem öffentlichen Schlüssel.	
+Erkläre das Mutual Authenticate Verfahren.	Kombination aus Internal und External Authentication – beide Parteien verifizieren sich gegenseitig mit Challenge-Response-Verfahren.	
+Auf welchen PC-Betriebssystemen wird PC/SC bzw. PC/SC Lite unterstützt?	Windows, Linux, MacOS und Android unterstützen PC/SC bzw. PC/SC Lite.	
+Was sind die Unterschiede zwischen Vendor-specific PC/SC driver und CCID driver?	Vendor-specific Treiber: wird vom Hersteller mitgeliefert, benötigt Interface-Treiber, läuft im Kernel-Modus und muss WHQL bestehen. CCID driver: standardisierter USB-Treiber, wird automatisch von Windows bereitgestellt, keine zusätzliche Installation nötig.	
+Was ist Smart Card Middleware und welche Aufgaben erfüllt sie?	"Ermöglicht Zugriff auf Smartcards über standardisierte APIs wie PKCS#11, MS-CSP, CNG, minidriver, CT-API. Sie kapselt Hardwarespezifika und stellt abstrakte Interfaces bereit."	
+Was sind typische Anwendungen für Smart Card Middleware?	Digitale Signatur, Authentifizierung (z. B. Login, VPN), E-Mail-Verschlüsselung, Zugriff auf Webdienste, Verschlüsselung von Dateien.	
+Welche standardisierten Crypto Interfaces kann man auf einem Windows-Rechner einsetzen?	"MS-CSP, CNG (Cryptography Next Generation), PKCS#11, Minidriver (Smart Card Base CSP)."	
+Welche standardisierten Crypto Interfaces kann man auf einem Linux-Rechner einsetzen?	"PKCS#11, OpenSC, evtl. CT-API bei bestimmten Anwendungen."	
+Wie funktioniert Benutzerauthentifizierung?	1) Der Benutzer präsentiert dem System seine ID. 2) Der Benutzer liefert oder erzeugt Authentisierungsinformationen, die das System überprüft.	
+Wie funktioniert das Digital Identity Model (NIST)?	Unterscheidet zwischen Identifizierung, Authentisierung und Attributprüfung gemäß NIST SP 800-63-3.	
+Welche Faktoren zur Authentisierung gibt es?	Etwas, das man weiß (z. B. Passwort), etwas, das man hat (z. B. Token), etwas, das man ist (z. B. Biometrie).	
+Was sind keine Faktoren zur digitalen Authentisierung?	Informationen, die öffentlich sind, kein Geheimnis enthalten oder leicht kopiert werden können.	
+Was ist eine MFA?	Multi-Faktor-Authentisierung mit mehreren unterschiedlichen Faktoren.	
+Was ist eine 2FA?	Zwei unterschiedliche Faktoren zur Authentisierung.	
+Kann Biometrie verwendet werden, um eine Person zu verifizieren?	Ja, Biometrie kann zur Verifizierung der physischen Anwesenheit verwendet werden.	
+Ist Biometrie ein Geheimnis und kann als alleiniger Faktor im NIST verwendet werden?	Nein, Biometrie ist kein Geheimnis und reicht allein nicht im NIST-Modell.	
+Was sind die Empfehlungen/Anforderungen an Passwörter laut NIST?	Min. 8 Zeichen (besser 15), max. 64, keine Zusammensetzungspflicht, ASCII/Unicode erlaubt, keine erzwungenen Wechsel.	
+Wie sollten Passwörter laut NIST gespeichert werden?	Gehasht mit Passwort-Hashing-Schema, gesalzen mit mind. 32 Bit Salt, optional zusätzlicher geheimer Salt im HSM.	
+Was ist ein Activation Secret oder PIN?	Ein Wissen, das einen anderen Faktor (z. B. Schlüssel) schützt.	
+Was sind die Anforderungen an Activation Secrets oder PINs?	Mind. 4–6 Zeichen, beliebte PINs verboten, max. 10 Fehlversuche.	
+Was ist ein Look-Up-Secret?	Ein günstiges Besitzelement (z. B. Grid-Karte), unabhängig von Handy/Spezialhardware.	
+Was passiert, wenn man Handy/Spezialhardware verliert?	Look-Up-Secret erlaubt dennoch Authentisierung ohne das verlorene Gerät.	
+Was sind die Anforderungen an Secrets?	Mind. 20 Bit Entropie (~6 Ziffern), sicherer Übertragungskanal, nur einmal verwendbar, Login-Versuche begrenzen.	
+Welche Angriffe machen die Secrets unmöglich?	Phantom-in-the-Middle (PITM)-Angriffe.	
+Was ist ein One-Time-Passwort?	Ein Passwort, das aus einem symmetrischen Schlüssel generiert wird und nur einmal gültig ist.	
+Welche Angriffe machen One-Time-Passwörter unmöglich?	Replay-Angriffe nicht möglich, aber PITM-Angriffe bleiben möglich.	
+Was ist das Lamport OTP Schema (1981) und wie funktioniert es?	Hash-Kette: p₀ = Hᵗ(K), pᵢ = Hᵗ⁻ⁱ(K); Authentisierung durch Überprüfung von H(pᵢ) = vorheriger Wert.	
+Wie funktioniert die Registrierung beim Lamport OTP Schema?	K wählen, p₀ = Hᵗ(K) berechnen und an Verifier übertragen, Verifier speichert p0 als p	
+Wie funktioniert die Authentisierung beim Lamport OTP Schema?	pᵢ = Hᵗ⁻ⁱ(K) senden, Verifier prüft H(pᵢ) = p und speichert neuen pᵢ.	
+Was ist OATH HOTP?	HMAC-basierter OTP-Algorithmus mit Counter-Wert (HOTP = Truncate(HMAC-SHA1(K, C))).	
+Wie funktioniert die Registrierung und Authentisierung beim OATH HOTP?	K und Counter C werden geteilt; HOTP wird gesendet; Verifier prüft und erhöht Counter.	
+Wie funktioniert die Resynchronisierung beim OATH HOTP?	Verifier prüft s HOTP-Werte im Voraus (Look-Ahead-Window) zur Synchronisation.	
+Was ist ein Look-Ahead-Window?	Bereich von s Werten, die geprüft werden, um asynchrone Counter zu erkennen.	
+Was ist OATH TOTP?	Zeitbasierter OTP-Algorithmus: TOTP = HOTP(K, T), T = (Unixzeit – T₀)/X.	
+Wie funktioniert die Registrierung und Authentisierung beim OATH TOTP?	K, T₀ und Zeitintervall X werden geteilt; TOTP berechnet anhand aktueller Zeit.	
+Wie funktioniert OATH TOTP Resynchronisierung?	Verifier prüft OTPs für Look-Back und Look-Ahead Zeitfenster; speichert Zeitabweichung.	
+Was ist eine Resynchronisierung?	Abgleich von Counter (HOTP) oder Zeitwerten (TOTP) zwischen Client und Verifier.	
+Was ist eine Look-Back and Look-Ahead beim OATH TOTP?	Prüfung mehrerer Zeitfenster um aktuellen T-Wert zur Toleranz von Zeitabweichungen.	
+Wie kann man HOTPs und TOTPs generieren?	HOTP = Truncate(HMAC-SHA-1(K, Counter)), TOTP = HOTP(K, T) mit T aus aktueller Zeit berechnet.	
+Was sind die Gemeinsamkeiten und Unterschiede dieser Authenticator Apps?	Gemeinsam: QR-Code-Import, TOTP/HOTP-Support. Unterschiede: Speicherort, Cloud-Sync, Multi-Device-Funktion.	
+Was ist ein OTP?	Ein einmalig gültiges Passwort, erzeugt durch Algorithmus aus gemeinsamem Schlüssel.	
+Wie funktionieren OTPs am YubiKey?	Zwei Slots für HOTP/TOTP/Challenge-Response, OTP-Generierung via Berührung, bis zu 32 Secrets via Yubico Authenticator.	
