@@ -1,0 +1,781 @@
+#separator:tab
+#html:true
+#tags column:3
+Welche Teilbereiche der IT-Forensik gibt es?	<ul><li>Datenträger Forensik</li><li>Mobil Forensik</li><li>Netzwerk Forensik</li><li>Mulitmedia Forensik</li><li>Cloud Forensik</li><li>Memory Forensik</li><li>Betriebssystem Forensik</li><li>IoT (Embedded) Forensik</li><li>Malware Forensik</li></ul>	
+Welche Aufgaben hat die IT-Forensik?	"<img src=""paste-bac0cae64bbd32835a074e78e1042cfad86b74a7.jpg"">"	
+Welche Anforderung an eine Ermittlung gibt es?	<ul><li>Akzeptanz: Es müssen allgemein anerkannte Methoden verwendet werden, deren Verwendbarkeit nicht in Frage gestellt wird.</li><li>Glaubwürdigkeit: Die Analyseschritte müssen nachvollziehbar sein. Die Funktionalität und Robustheit der Methoden muss nachweisbar sein.</li><li>Wiederholbarkeit: Alle durchgeführte Schritte müssen von unabhängigen Dritten wiederholbar sein und die gleichen Ergebnisse liefern.</li><li>Integrität: Die Integrität der Daten muss zu jedem Zeitpunkt gesichert und nachweisbar sein.</li><li>Ursacheund Auswirkung: Durch die Auswahlder Methoden müssen logisch, nachvollziehbare Verbindungen zwischen Personen, Ereignisse und Beweisspuren hergestellt werden.</li><li>Dokumentation: JedeTätigkeit im Prozess muss angemessen dokumentiert werden</li></ul>	
+Welche Phasen durchläuft ein Ermittlungsprozess?	<ul><li><b>Vorbereitung der Ermittlung</b>: Die rechtlichen Aspekte müssen betrachtet werden, um Probleme mit Privat-und Datenschutzrechten zuvermeiden.</li><li><b>Sicherstellung:</b> Es erfolgt eine bitweise Kopie der Datenträger relevanter Systeme und die Erstellung eines Images.</li><li><b>Schutz der Beweismittel:</b> Um die Gerichtsverwertbarkeit der Beweismittel zugewährleisten muss die Integrität der Daten sichergestellt werden.</li><li><b>Untersuchungund Bewertung:</b> Die gesicherten Daten werden im nachhinein analysiert und auf ihre Relevanz bewertet.</li><li><b>Dokumentation:</b> Es muss eine laufende Dokumentation angefertigt werden.</li></ul>	
+Erkläre das SAP-Modell	"<img src=""paste-53a58bcdf1bb9849e511d16c822c8c3940f2eba9.jpg"">"	
+Wie muss mit Beweismitteln umgegangen werden?	"<img src=""paste-328ad459ef32f1e93627adae7d798c15967f821f.jpg"">"	
+Welche Arten von Beweismitteln gibt es und was muss mit diesem passieren?	<b>Arten von Beweismitteln</b><br><b>Physikalische</b><br><ul><li>Dokumente</li></ul><b>Elektronische</b><br><ul><li>Flüchtige, fragile und temporär zugreifbare Daten</li><li>Persistente Daten</li></ul><b>Die Sicherstellung alle Beweismittel muss dokumentiert werden</b><br><ul><li>Anfertigung von Beweismitteldokumentation</li><li>Erstellung einer Beweismittelliste</li><li>Protokollierung der Arbeitsschritte</li><li>Protokollierung der Verwendungsvorgänge</li></ul>	
+Welche Internaltionale Standards gibtes für die Beweissicherung?	"<img src=""paste-37c52c8f33d2374b64001fdaa1190444844a25da.jpg"">"	
+Was sagt die ISO/IEC 27037 zur Identifikation, Sammlung, Erhebung und Erhaltung der digitalen Beweissicherung?	"<img src=""paste-70a28f5e9feeca22b7da01a9625cedf91ede5fa3.jpg"">"	
+Welche Indizien und Spuren im Kontext eines IT-Systems gibt es und welche Abstraktionsgrade gibt es?	<b>Indizien, Spuren im Kontext eines IT-Systems</b><br><ul><li>Computer, Smartphone, HDD, SSD, RAM, USB-Stick, SD-Karte, Router, Firewall, Accesspoint, Cloud-Dienste, Mailserver etc.</li></ul><b>Abstraktionsgrade:</b><br><ul><li>Anwendungsebene: Applikationsdaten (z.B. Word, Browser).</li><li>Dateisystemebene: Dateisystem (z.B. NTFS).</li><li>Datenträgerebene: Partitionen</li><li>Rohdaten: Bits und Bytes</li><li>Physische Spur: (Staub ;))</li></ul><br><b>Daten (Spuren / Artefakte) müssen korrekt interpretiert werden!</b><br>	
+Was kann analysiert werden?	"<img src=""paste-8a137a5e2b1243a704a81ab0819630a7f5f648c7.jpg"">"	
+Welche Arten von Daten gibt es?	"<b>Strukturierte Daten</b><br><ul><li>Die Daten weisen eine gleichartige Struktur auf.</li><li>Typischerweise Datenbanken oder Buchhaltungsdaten</li></ul><b>Unstrukturierte Daten</b><br><ul><li>Keine Struktur zur automatisierten Analyse nutzbar</li><li>Beispielsweise Dokumente, beliebige Texte, Grafiken</li></ul><b>Semi-Strukturierte Daten</b><br><ul><li>Daten können eine Struktur aufweisen</li><li>Benötigen Analyse vor der Verarbeitung</li><li>Beispielsweise HTML, XML, Protokolldateien</li></ul><div><img src=""paste-e5bb834701d2526720d460965fe73acd48be2085.jpg""><br></div>"	
+Wo kann die IT-Forensik unterstützen?	<ul><li>Waren Dokumente mit bestimmten Inhalt vorhanden?</li><li>Hat ein Mitarbeiter kriminelle Handlungen begangen?</li><li>Datendiebstahl</li><li>Wirtschaftskriminalität</li><li>Cyber-Kriminalität</li><li>Kartellrecht</li><li>Unterstützung der Internen Revision</li><li>(In-/ Co-und Out-Sourcing)</li><li>Als Sachverständiger für die Staatsanwaltschaft oder bei Privatgutachten zur Beantwortung spezifischer Fragestellungen</li></ul>	
+Welche Ziele kann eine Ermittlung haben?	<ul><li>Erkennen der Methodik bzw. Schwachstelle die zum eigentlichen Vorfall / Incident geführt haben</li><li>Ermittlung des entstandene Schadens</li><li>Identifikation des Angreifers</li><li>Sicherung der Beweise für juristische Aktionen (gerichtsverwertbar)</li><li>Strafrechtlich: Kinderpornographie</li><li>Zivilrechtlich: Industriespionage, Wirtschaftskriminalität</li><li>Rekonstruktion gelöschter Daten</li></ul>	
+Was ist Forensik in der IT?	<ul><li>Forensik im alltäglichen Gebrauch bedeutet die Identifikation, Analyse und Rekonstruktion von kriminellen Handlungen.</li><li>In der IT wird die Forensik angewandt, um verdächtige Vorfälle im Zusammenhang mit IT-Systemen zu analysieren.</li><li>Das Ziel der IT-Forensik ist es, einen Sachverhalt (z.B. kriminelle Handlung) soweit wie möglich nachweisen bzw. rekonstruieren zu können.</li></ul>	
+Welche unterschiedliche Ausprägungen gibt es in der IT-Foresenik?	<ul><li>Datenträger-Forensik</li><li>Mobil-Forensik</li><li>Cyber-Forensik</li><li>eDiscovery</li></ul>	
+Welche Fragestellung im Zuge der Ermittlung gibt es?	<ul><li>Was ist passiert?</li><li>Welche Systeme wurden kompromittiert bzw. wo können zusätzliche Information zu dem Vorfall sichergestellt werden.</li><li>Wie sollte der kompromittierte Rechner und die zugehörige Umgebung gesichert werden?</li><li>Welche Methoden können für die Sammlung von Beweisen verwendet werden?</li><li>Wo sucht man nach Anhaltspunkten und wie können die Daten analysiert werden?</li><li>Wie wird der Angriff oder die Straftat verifiziert?</li></ul>	
+Für was wird Computerforensik eingesetzt?	<ul><li>Computerforensische Analyse von Logdateien um Zugriffe auf ein System nachzuweisen</li><li>Nachweis erbringen, dass Daten auf einem Computersystem vorhanden sind (E-Mail)</li></ul>	
+Welche weitere Einsatzbereiche für Computerforensik gibt es?	Klärung von Streitfragen zwischen Personen und Unternehmen:<br><ul><li>• Waren Dokumente mit bestimmten Inhalt vorhanden.</li><li>• Hat ein Mitarbeiter kriminelle Handlungen begangen</li><li>• Datendiebstahl</li><li>• Wirtschaftskriminalität</li><li>• Kartellrecht</li></ul>Als Sachverständiger für die Staatsanwaltschaft oder bei Privatgutachten:<br><ul><li>• Zur Beantwortung spezifischer Fragestellungen</li></ul>	
+Wie läuft eine typische interne Untersuchung ab?	"<img src=""paste-fccf2d4561a4e1da3c8f0cf8c2aafe75bb14edc5.jpg"">"	
+Wie läuft eine typischer Incident-Response-Prozess ab?	"<img src=""paste-90847af23e884bf66cd8e22aff72027953cc7899.jpg"">"	
+Wie läuft ein typischer eDiscovery-Prozess ab?	"<img src=""paste-6e219b3c7bc12da35965dfbee7288a9b7ffd15ac.jpg"">"	
+Wie läuft eine Datenreduktion ab?	"<img src=""paste-130b5787902641ffa01b417bae20b060392004ee.jpg"">"	
+Wie läuft ein EDRM-Prozess ab?	"<img src=""paste-7374cf5f3f2f976352677f50eba375f5739402ae.jpg"">"	
+Was passier bei der Identifizierung im EDRM-Prozess?	<b>Identifizierung und Katalogisierung</b><br><ul><li>• Datenmaterial bzw. Unterlagen werden identifiziert und katalogisiert</li><li>• um eine Aufstellung aller Beweismittel anzufertigen</li><li>– Datenquellen (E-Mail Server, Fileserver, Notebooks, Mobiltelefone, etc.)</li><li>– Custodians</li><li>– Zeiträume</li></ul>	
+Welche Anforderungen an die Qualität gibt es im EDRM-Prozess?	<b>Anforderungen an die Qualität</b><br><ul><li>Beweismittel und Protokolldaten vor Manipulation und Datenverlust schützen</li><li>Gerichtsverwertbare forensische Datensicherungen der betroffenen Computersysteme sowie mobiler Geräte</li><li>Vieraugenprinzip</li><li>Lückenlose Dokumentation der Beweissicherung (Chain-of-Custody)</li><li>Höchst mögliche Qualität (bit-weise Sicherung unter Verwendung eines Writeblockers)</li><li>Erstellen von digitalen Prüfsummen (Hash) der gesicherten Daten zur, Sicherstellung der Integrität</li><li>Verschlüsselung der Daten bzw. physische Versiegelung der Datenträger</li></ul>	
+Wie läuft die Datenverarbeitung im EDRM-Prozess ab?	<b>Datenverarbeitung</b><br><ul><li>Aufbereitung der sichergestellten Beweismittel / Digitale Images</li><li>Wiederherstellung gelöschter Daten</li><li>Deduplizerung redundanter Daten</li><li>OCR (Texterkennung) in Bilddokumenten (z.B. Fax, Scans, …)</li><li>Indexierung der elektronischen Daten</li></ul>	
+Wie läuft die Analyse im EDRM-Prozess ab?	<b>Analyse</b><ul><li>Filterung anhand von Metadaten (Zeit, Dateigröße, Datentyp etc.)</li><li>Identifizierung und Öffnung verschlüsselter Daten</li><li>Erkennung der Sprache der einzelnen Objekte</li><li>Volltextsuche Suchbegriffe können verknüpft werden</li><li>Predictive Coding (Maschinen Intelligenz zum Anlernen und Filtern relevanter Daten)</li></ul>	
+Wie läuft die Durchsicht der Daten in der eDiscovery-Plattform im EDRM-Prozess ab?	<b>Durchsicht der Daten in der eDiscovery-Plattform</b><ul><li>Reduzierte Datenmenge wird für die Recherche bereitgestellt</li><li>Effizientes Review mit Tagging-Strukturen, virtuelle Folder, etc.</li><li>Rollen und Berechtigungskonzept</li><li>Schwärzung von Datenbereichen</li></ul>	
+Wie läuft die Bereistellung der Daten und Darstellung der Egenisse beim EDRM-Prozess ab?	<b>Bereitstellung der Daten</b><ul><li>Export der Daten und Unterlagen im Originalformat oder als PDF Dokument</li><li>Einbetten eindeutiger Dokumenten-IDs und fortlaufender Nummern zur einfachen Referenzierung und zur Vorlage bei Gericht</li></ul><b>Darstellung der Analyse-Ergebnisse</b><ul><li>Berichtslegung ist faktenorientiert, strukturiert und gerichtsverwertbar</li><li>Erstellen von detaillierten Berichten über die Erkenntnisse</li><li>Präsentation der Ergebnisse vor Gericht oder anderen Institutionen</li><li>Spezifische Auswertungen für spezielle forensische Anforderungen</li><li>abhängig von der Fragestellung</li></ul>	
+Was befindet sich auf einem typischen Computer?	<ul><li>Web-Browser (z.B. Google Chrome, Mozilla Firefox etc.)</li><li>Microsoft Outlook oder eine andere Art von E-Mail-Software</li><li>Microsoft Office</li><li>Kommunikations-Software wie Skype, Microsoft Teams etc.</li><li>Texteditoren (z.B. Notepad++)</li><li>Antiviren-Software</li><li>VPN</li></ul><b>Remote-Access-Software (z.B. Citrix Workspace oder Remotedesktopverbindung)</b><br><ul><li>Diese Applikationen hinterlassen unterschiedlichste Artefakte</li><li>OST-/PST-Dateien</li><li>Protokolldaten</li><li>etc.</li></ul>	
+Welche unterschiedlichen Aktionen bzw. Analysehandlung können mithilfe der typischen Artefakte auf einem Computer durchgeführt werden?	<ul><li>Wiederherstellen gelöschter Dateien</li><li>Wiederherstellen gelöschter E-Mail-Nachrichten</li><li>Analyse von unterschiedlichsten Applikations-Logs</li><li>Analyse von Registry-Einträgen</li><li>Analyse von Prozessinformationen</li><li>etc.</li></ul>	
+Was sind typische anfallende Daten auf einem Mobiltelefon?	"<img src=""paste-1bc2fdaa4aaf94b9850ebab13f77d53c32274a4e.jpg"">"	
+Welche Outlook-Dateien kennst du und was kann man mit diesen Anfangen?	<b>• PST-Dateien</b><br><ul><li>– Persönlicher Speicherordner wo Kopien von E-Mail-Nachrichten, Kalenderereignisse und E-Mail-Regeln gespeichert werden</li><li>– Kann auch zur Erstellung von Sicherungskopien oder zum Exportieren von Elementen des E-Mail-Kontos verwendet werden</li><li>– Verwendung für POP3-Konten, jedoch in Outlook 2013 auch für IMAP- oder MAPI-Konten</li><li>– Seit Outlook 2016 werden E-Mails von IMAP- und MAPI-Konten in OST-Dateien gespeichert</li></ul><b>• OST-Dateien</b><br><ul><li>– Speichert Kopien von Elementen von IMAP- oder MAPI-Konten</li><li>– OST-Dateien werden automatisch mit dem entsprechenden Mail-Server synchronisiert (bei bestehender Internetverbindung)</li></ul><b>• Unterschied zu PST-Dateien</b><br><ul><li>– PST-Dateien enthalten die tatsächlichen Daten, wohingegen OST-Dateien die zwischengespeicherten Dateien enthalten.</li><li>– PST-Dateien können z.B. auf andere Computer verschoben und importiert werden</li></ul><b>• Interesse für die Forensik</b><br><ul><li>– Wiederherstellen von gelöschten E-Mail-Nachrichten</li><li>– Wiederherstellen von gelöschten Kalenderereignissen</li></ul>	
+Was ist die Windows-Registry und wie ist sie aufgebaut?	<ul><li>Ähnlich zu einem Dateisystem: Daten werden hierarchisch abgespeichert</li><li>Besteht aus Schlüsseln (Keys) und Einträgen (Entries oder Values)</li><li>Schlüssel: ähnlich wie Ordner auf der Dateiebene und beinhalten weitere Einträge und Unterschlüssel</li><li>Eintrag: Key-Value-Pair, wobei der Wert dieses Paares unterschiedliche Datentypen aufweisen kann</li><li>Standardwerte sind unbenannt, d.h. Einträge müssen nicht zwingen einen Namen besitze</li></ul>	
+Welche Hautpschlüssel und welche gespeicherte Daten gibt es in der Windows-Registry?	<b>• HKEY_CLASSES_ROOT (HKCR)</b><br><ul><li>– Informationen zu Dateiendungen und unterstützte Dateitypen</li></ul><b>• HKEY_CURRENT_USER (HKCU)</b><br><ul><li>– Informationen des aktuell angemeldeten Benutzers</li><li>– Spiegelung von HKEY_USERS\&lt;Benutzer-SID&gt;</li></ul><b>• HKEY_LOCAL_MACHINE (HKLM)</b><br><ul><li>– Das ganze System betreffende Informationen, nicht nur auf Benutzer</li><li>bezogen</li></ul><b>• HKEY_USERS (HKU)</b><br><ul><li>– Schlüssel der vorhandenen Benutzerkonten am System</li><li>– Jeder Benutzer hat einen eigenen Security Identifier (SID)</li></ul><b>• HKEY_CURRENT_CONFIG (HKCC)</b><br><ul><li>– Spiegelung von HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware</li><li>Profiles\Current</li></ul>	
+Warum Memory Forensic?	<b>ALLES in einem Betriebssystem durchläuft den Arbeitsspeicher in irgendeiner Art und Weise!</b><br><ul><li>Prozesse und Threads</li><li>Malware (inkl. Rootkits)</li><li>Netzwerkverbindungen, -Sockets, -URLs, IP-Adressen</li><li>Filehandles / offene Dateien</li><li>Benutzer-“Content“</li><li>Passwörter, gecachte Informationen, Zwischenablage etc.</li><li>Schlüsselmaterial (z.B. Verschlüsselungsschlüssel)</li><li>Software-und Hardware-Konfigurationsinformationen</li><li>WINDOWS-Registry-Schlüssel und -Protokolle (z.B. Event Logs)</li></ul>	
+Welche Vorteile bietet die Memory Forensics?	<b>Gute Fundstelle um maliziöse Aktivitäten von Software zu identifizieren</b><ul><li>Möglichkeit zur Betrachtung der laufenden Systemkonfiguration / des laufenden Systemzustandes</li><li>Möglichkeit zur Identifizierung von Inkonsistenzen oder Widersprüchen im System</li><li>Anti-Forensik-Mechanismen (Packer, Obfuscators, Rootkits etc.) können oftmals umgangen werden, oder sind nicht vorhanden</li></ul><b>Analysemöglichkeiten und Nachverfolgung von kürzlichen Aktivitäten am System</b><ul><li>Identifizierung kürzlicher Aktivität im jeweiligen Kontext</li><li>Nachverfolgung von Aktivitäten Benutzern oder Angreifern</li></ul><b>Sammlung von Informationen/Beweisen, welche sonst nicht aufzufinden sind</b><ul><li>Memory-only-Malware</li><li>Internetaktivitäten<br></li><li>Chat-/Nachrichtenverläufe<br></li><li>etc.<br></li></ul>	
+Welche Schritte durchläuft ein Memory-Forensics-Prozess?	<ol><li>Identify rogue processes</li><li>analyze process DLLs and handles</li><li>review network artifacts</li><li>Look for evidence of code injection</li><li>check for signs of a rootkit</li><li>dump suspicious processes and drivers</li></ol>	
+Was ist ein Hard Disk Drive (HDD)?	<div><br></div><ul><li>Magnetisches Speichermedium</li><li>Rotierende Scheibe zur Speicherung</li><li>Speicherung in magnetischer Form</li><li>Aufteilung in Sektoren</li></ul>	
+Was ist ein Solid State Drive (SSD)?	<ul><li>Elektronisches Speichermedium</li><li>Halbleiterbausteine</li><li>Speicherung in Flash-Zellen</li><li>SLC und MLC Technologie</li></ul>	
+Welche unterschiedliche Interfaces gibt es bei Speichertechnologie?	<b>ATA -Advanced Technology Attachment with Packet Interface (ATA/ATAPI) -1989</b><br><ul><li>Integrated Drive Electronics (IDE)</li></ul><b>SATA -Serial ATA</b><br><ul><li>1.5 Gbit/s, 3.0 Gbit/s, 6.0 Gbit/s –2002/2005/2008</li><li>External SATA (eSATA) -2005</li><li>Mini-SATA (mSATA) –2009</li><li>External Power over Serial ATA (eSATAp) -2008</li></ul><b>SCSI -Small Computer System Interface -1986</b><br><ul><li>Ursprünglich eine standardisierte parallele Schnittstelle für Datenübertragung. Mittlerweile als Protokoll für verschiedene Transportmechanismen (z.B.: SATA oder SAS)</li></ul><b>SAS -Serial Attached SCSI:</b><br><ul><li>SFF-8482, SFF-8484, SFF-8470, SFF-8087 -2004</li></ul><b>Spezial: Low-Insertion-Force (LIF), Zero-Insertion-Force (ZIF)</b><br><ul><li>eingesetzt bei 1,8“ Festplatten</li></ul>	
+Erkläre die M.2 Schnittstellle.	"<ul><li>M.2 ist eine Spezifikation für interne Erweiterungskarten auf PC Mainboards und Notebooks. M.2 wurde als Nachfolger der mSATA Schnittstelle konzipiert.<br></li><li>Der M.2-Standard beschreibt Varianten mit bis zu vier PCI-Express-Lanes, einem SATA Revision 3.x (6 Gbit/s) und/oder einem USB 3.0 Port –alles über einen Anschluss. Damit kann man sowohl PCI-Express als auch SATA-Speicher per M.2 anschließen. Anjedem Port können beide Bussysteme auch parallel genutzt werden.</li><li>M.2 ist ideal für den Anschluss einer SSD im kompaktenmobilen Gerätgeeignet, wie beispielsweise im Note-und Ultrabook, aber auch im Desktop PC.</li></ul>Formfaktoren und Keys<br><ul><li>Die Form der M.2 Anschlüsse unterscheidet sich danach, welche Schnittstellen der M.2 Port bietet. Je nach</li></ul><br><img src=""paste-b73ee8f91cde84642553a89c396745afa6548f0e.jpg""><br>"	
+Erkläre den physischen Aufbau einer HDD.	"<ul><li>Rotierbar gelagerten Scheiben (Platter)</li><li>Achse oder auch Spindel</li><li>Elektromotor als Antrieb für die Scheiben</li><li>Antrieb für die Schreib-/Leseköpfe</li><li>Bewegliche Schreib-/Leseköpfe (Heads)</li><li>Jeweils ein Lager für Platter und für die Schreib-/Leseköpfe (auch Magnetlager)</li><li>Der Steuerelektronik für Motor-und Kopfsteuerung</li><li>Einem DSP für Verwaltung, Bedienung des Interfaces, Steuerung der DDR-RAM für Firmware, temporäre Daten und Festplattencache</li><li>Der Schnittstelle zum Ansprechen der Festplatte von außen</li></ul><br><img src=""paste-0f47a48d22535fc47044484ebf6287deb9e191a2.jpg""><br>"	
+Wie funktioniert die HDD-Adressierung Cylinder Head Sector?	<b>CHS -Cylinder Head Sector</b><br><ul><li>Adressierung nach Anzahl der Zylinder, Köpfe und Sektoren</li><li>Adressierung für andere Speichermedien nicht anwendbar (Tapes)</li><li>Veraltet !!!</li><li>Heute -&gt; LBA Adressierung</li></ul>	
+Wie funktioniert die HDD-Adressierung Logical Block Addressing?	"<ul><li>Blöcke werden unabhängig von derFestplattengeometrieadressiert</li><li>28-bit bei ATA-1 (1994) / entspricht ca. 128 GiB bei 512Byte Blöcken</li><li>48-bit mit ATA-6 (2003) / entspricht ca. 128PiB</li><li>Zone bit recording</li><li>äußere Spuren enthalten mehr Blöcke als innere</li><li>Datentransferrate ist außen am höchsten</li></ul><br><img src=""paste-d1e926f37d08235335103d9efbfcc44bb61f1d0d.jpg""><br>"	
+Erkläre das Advanced Format - 4k Format für HDD-Adressierung.	"<b>Advanced Format -4k Format</b><br><ul><li>Bezeichnung für Festplatten mit einer physischen Sektorgröße von 4 KByte</li><li>Seit 2011 quasi Standard</li></ul><b>Vorteile:</b><br><ul><li>Optimierte Formateffizienz durch Verringerung des Overheads für Fehlerkorrekturcode</li><li>Zuverlässigkeit und Fehlerkorrektur</li></ul><b>Auswirkungen:</b><br><ul><li>512-Byte-Sektoremulation: Lesezugriff ist relativ einfach, Schreiben jedoch kompliziert</li><li>Partitionen müssen immer an 4K Blöcken ausgerichtet sein; ansonsten Performanceeinbußen</li></ul><div><b>Advanced Format</b><br><ul><li>erlaubt mehr Nutzdaten zu speichern weil der Overhead geringer ist</li></ul><div><img src=""paste-b3633e968ee5a4ed7086ffd0e19c8c6780bfd952.jpg""><br></div></div>"	
+Wie funktioniert die Longitudinal Magnetic Recording Speichertechnologie?	● Bei LMR wird horizontal auf der Scheibe, genannt<br>Platter, magnetisiert.	
+Wie funktioniert die Perpendicual Magnetic Recording Speichertechnologie?	<ul><li>● Um die Dichte der möglichen Aufzeichnung zu erhöhen, magnetisiert man bei PMR senkrecht auf dem Platter.</li><li>● Der hierzu verwendete Schreib-/Lesekopf unterscheidet sich auch im Aufbau zum klassischen LMR-Kopf, welcher in seiner Arbeitsweise einem Tonband-Kopf ähnelt.</li><li>● Durch das senkrechte Positionieren der magnetischen Momente wird eine dreifach höhere Datendichte im Vergleich zum LMRAufzeichnungsverfahren erreicht.</li></ul>	
+Wie funktioniert die Shingled Magnetic Recording Speichertechnologie?	<ul><li>● Bei SMR werden die Daten überlappend geschrieben.</li><li>● Der Schreibkopf schreibt so nah an die vorhergehende Bahn, dass diese gerade noch so lesbar bleibt. Dabei werden aber die Daten in der folgenden Bahn überschrieben.</li><li>● Somit muss nach erfolgreichem Schreiben einer Bahn ggfs. die nächste Bahn ebenso neu geschrieben werden.</li><li>● Der Vorteil dieser Technologie ist, dass, bedingt durch den geringeren Abstand zwischen den Spuren, die Speicherdichte im Vergleich zu PMR noch weiter gesteigert werden kann.&nbsp;</li></ul>	
+Erkläre Energy Assisted Magnetic Recording.	HAMR (Heat Assisted Magnetic Recording) und MAMR (Microwave Assisted Magnetic Recording) sind Technologien zur Erhöhung der Kapazität von Festplatten. Sie unterstützen den Schreibkopf einer Festplatte, indem sie die zur Magnetisierung notwendige Feldstärke verbindern. Der Schreibkopf kann kleiner ausfallen, die Spuren werden noch dünner und die Speicherdichte steigt.	
+Wie ist ein Solid State Drive (SSD) aufgebaut?	"<ul><li>SSDs enthalten keine beweglichen Teile</li><li>Die Daten werden nicht sequenziell auf den Chips gespeichert. Zur Datenrettung müssen die Ingenieure die Daten wieder erneut zuordnen –ein ähnlich komplexer Vorgang, wie bei einer RAID-Datenrettung</li><li>Speichereinheiten sind</li><li>Pages (4/8) KB</li><li>Blöcke 256KB –2MB</li></ul><div><img src=""paste-ca5c90dfda4bb4ec71ecc99343daf869601ac66c.jpg""><br></div>"	
+Wie sieht die Architektur von einer SSD aus?	"<img src=""paste-1eee42a54916a5655a9407c3f23b787918eede42.jpg"">"	
+Wie funktioniert der Speicherzugriff bei einer SSD?	"<img src=""paste-e231d3479230e50ab4f73f174ffd19d13df4a801.jpg"">"	
+Was ist eine Page, ein Block und ein Chip bei einer SSD?	"<img src=""paste-c3e9db675b7b614c3d775d39b6a47202968182f7.jpg"">"	
+Wie funktioniert die SSD-Garbage Collection?	"<ul><li>Daten werden in Pages und Blöcken abgelegt</li><li>Pages können nicht individuell gelöscht oder überschrieben werden</li><li>Pages mit geändertem Inhalt werden in einem anderen, freien Bereich abgelegt</li></ul><div><img src=""paste-c9146ae96b1431a5154319b4c193ce37091a2ad8.jpg""><br></div>"	
+Was versteht man unter SSD-Wear Leveling?	"Wear Leveling:<br><ul><li>Mittels Wear Leveling Algorithmen versucht man die Abnutzung/Verschleiß (engl. wear) der Speicherzellen gleichmäßig zu verteilen</li><li>Unterschiedliche Nutzung der Speicherzellen (Pages) je nach Art der Speichernutzung bzw. Zugriff</li></ul><br><img src=""paste-f8b104605c5b926da55150eb6dd7ef3dce97b0f1.jpg""><br>"	
+Worin unterscheiden sich Dynamisches Wear Leveling und Statisches Wear Leveling?	"<b>Dynamisches Wear Leveling</b><br><ul><li>verteilt die Daten bei Schreibzugriffen (dynamisch) auf jene Speicherbereiche welche am wenigsten genutzt sind</li></ul><b>Statisches Wear Leveling</b><br><ul><li>verschiebt auch statische Daten auf andere Blöcke</li><li>kostet etwas Performance, vermeidet aber dass Zellen mit statischen Daten nur 1x während der gesamten SSD-Lebensdauer beschrieben werden, während andere Zellen schon ausfallen</li><li>die SSD-Lebensdauer ist damit höher als bei dynamischen Wear Leveling</li></ul><div><img src=""paste-55ce0dfe54f587060b4692429f6d732d8463f167.jpg""><br></div>"	
+Was ist SSD-TRIM und welche Vorteile bietet es?	<b>TRIM</b><br><ul><li>ATA Befehl zur Freigabe von nicht mehr benötigten Speicherzellen (unterstützt die Garbage Collection)</li><li>Betriebssystem sendet Informationen an den Controller der SSD damit dieser weiß, welche Seiten nicht mehr benötigt werden</li><li>Die Inhalte werden beim nächsten Schreibzyklus nicht mehr mitgeschrieben</li><li>Blöcke werden beim nächsten Löschzyklus freigegeben</li></ul><b>Vorteile:</b><br><ul><li>Anzahl der zusätzlichen Schreibvorgänge im Zuge der Garbage Collection</li><li>Höherer Datendurchsatz da weniger Daten bei der GC berücksichtigt werden müssen</li><li>Höhere Lebensdauer der Speicherzellen</li></ul>	
+Was ist so besonders an ATA-TRIM-Kommando?	<b>ATA-TRIM-Kommando</b><br><ul><li>Der Kontroller (Firmware) der SSD weiß welche Speicherbereiche freigegeben wurden und leert den Speicher</li><li>Unterschiedliche Implementierung der Funktion verstärkt das Problem in der Forensik</li></ul>	
+Wie löscht man eine SSD/HDD sicher?	<b>Secure Erase</b><br><ul><li>Speicherbereiche einer SSD werden automatisch gelöscht und auf den Ursprungszustand zurückgesetzt<br></li><li>Eine Wiederherstellung der Daten ist somit nicht möglich<br></li><li>Bei nicht korrekter Implementierung der Funktion durch den Hersteller bleiben die Daten im Restspeicher eventuell enthalten<br></li><li>Bad Blocks werden von den meisten Herstellern nicht gelöscht<br></li></ul><b>Sicheres Überschreiben</b><br><ul><li>Bei HDDs können Daten beispielsweise mit 0en oder Random-Data überschrieben werden<br></li><li>EINMAL Überschreiben ist ausreichend<br></li><li>SSDs können nicht sicher überschrieben werden, da aufgrund des Wear-Leveling Mechanismus nicht feststellbar ist, welche Speicherzellen angesprochen werden<br></li></ul>	
+Was ist eine Host Protected Area (HPA) bei HDD?	<b>Host Protected Area (HPA)</b><ul><li>HPA ermöglicht es, einen Bereich der Festplatte zu verstecken.</li><li>Wurde mit ATA-4 Standard eingeführt</li><li>Für BIOS, Betriebssysteme und Programme meist nicht sichtbar und kann nicht verändert werden</li><li>Primäre Verwendung für Systemwiederherstellungs-und Konfigurationsdaten, die auch beim Formatieren der Festplatte erhalten bleiben</li><li>Im Bereich der Forensik interessant, da</li><li>eventuell Beweise innerhalb dieser Bereiche versteckt werden</li><li>Kann temporär entfernt werden -&gt; forensische Sicherung</li></ul>	
+Was ist eine Device Configuration Overlay (DCO) bei HDD?	<b>Device Configuration Overlay (DCO)</b><ul><li>Ähnlich zu HPA</li><li>Wurde mit ATA-6 Standard eingeführt</li><li>Wird von Herstellern verwendet um bsp. die Größe einer Festplatte einzuschränken</li><li>kann nicht temporär entfernt werden;</li><li>bei Entfernung ändern sich die Informationen auf der Platte dauerhaft</li></ul>	
+Welche HPA-relevante ATA-Befehle gibt es?	<ul><li>• READ_NATIVE_MAX_ADDRESS: zeigt immer die maximale Sektor Adresse (maximum physical address) an, indem er die höchste Adresse gemäß der Werkseinstellung - also die tatsächliche Größe - ausliest.</li><li>• IDENTIFY_DEVICE: gibt die Kapazität einer Festplatte zurück.</li><li>• SET_MAX_ADDRESS: Setzen der maximal adressierbaren Größe.</li><li>• Vergleich: IDENTIFY_DEVICE und READ_NATIVE_MAX_ADDRESS</li></ul>	
+Welche DCO-relevante ATA-Befehle gibt es?	<ul><li><br></li><li>• IDENTIFY_DEVICE: gibt die Kapazität einer Festplatte zurück.</li><li>• DEVICE_CONFIGURATION_IDENTIFY: liefert den aktuellen DCO Zustand</li><li>• DEVICE_CONFIGURATION_RESET: rücksetzen der DCO</li></ul>	
+Wieso gibt es Partitionierungen ?	<div><br></div><ul><li>Zusammenhängende Teil des Speicherplatzes eines Datenträgers</li><li>Sind voneinander unabhängig und werden vom Betriebssystem wie „eigene“ Laufwerke behandelt ( DualBoot)</li><li>Eigenes Dateisystem pro Partition</li><li>Steuerung und Adressierung der Partitionen über Partitionstabelle (MBR, GPT, LVM, BSD)</li><li>Softwarefehler sind in der Regel nicht partitionsübergreifend</li><li>Erlaubt Software-seitige Verschlüsselung einzelner Bereiche einer Festplatte</li><li>Erlaubt eine besserer Strukturierung der Dateisysteme</li></ul>	
+Worin unterscheiden sich MBR vs GUID?	"<img src=""paste-906ce3b52fce618fa72ed5df7449e23bb9fbbd7e.jpg"">"	
+Was versteht man unter Master Boot Record (MBR)?	"<b>• Befindet sich im ersten Sektor des Datenträgers</b><br><b>• MBR beinhaltet die Beschreibung von bis zu vier Partitionen</b><br><ul><li>– Start- und Ende-Adresse</li><li>– Anzahl an Sektoren</li><li>– Typ der Partition</li><li>– Flags</li></ul><b>• 3 Primary File System Partitionen</b><br><b>• 1 Secondary File System Partition</b><br><ul><li>– Diese beinhaltet bei Bedarf weitere Partitionen</li><li>– Adressierung über Partitionstabelle ähnlich dem MBR</li></ul><div><img src=""paste-f9c3f6b43b323ad781bf04d5be59f67b9c62ef7e.jpg""><br></div>"	
+Was versteht man utner GUID Partition Table (GPT)?	"<b>Enthält MBR (Protective MBR) mit einem Partitionseintrag zur Rückwärtskompatiblität<br>GPT Header</b><br><ul><li>Position und Größe der Partition Table</li><li>Checksum über Header und Partition Table</li><li>Start-und Ende-Adresse des gesamten Partitionsbereiches</li></ul><b>Primäre GUID-Partitionstabelle</b><br><ul><li>Start-und Ende-Adresse</li><li>Typ</li><li>Name</li><li>Flags</li><li>GUID Value</li></ul><b>Partitionen<br>Backup des GPT Headers und der Partition Table<br></b><br><img src=""paste-c679158191ed18d9d39d1b1923e254b3375327e9.jpg""><br>"	
+Welche verschiedene Dateisysteme gibt es?(Apple, MS, Linux)	<b>Apple</b><br><ul><li>HFS (Hierarchical File System) mit Apple spezifischen Eigenschaften</li><li>HFS+: HFS mit Journaling und Standard in Mac OS X</li><li>HFSX: HFS+ mit Case-Sensitive-Konfiguration</li><li>APFS : Ein Rework von HFS+, mit Unterstützung für Verschlüsselung etc.</li></ul><b>Microsoft</b><ul><li>NTFS (New Technology File System) Journaling Dateisystem der NT-Produktlinie; Standard seit Windows XP</li><li>FAT32 (File Allocation Table) mit erweiterten Limits als FAT16 ab Windows 95 und 2000</li><li>exFAT als spezialisierte FAT32 Version für Einsatz auf Flash-Speichern</li></ul><b>Linux</b><ul><li>ext2 (Second Extended File System) speziell für Linux weiterentwickelte Version von minix</li><li>ext3 (Third Extended File System) ist ein um Journaling erweitertes ext2</li><li>ext4 (Fourth Extended File System) mit erweiterten Links</li><li>EncFS (Encrypted Files System) basiert auf FUSE-System</li></ul>	
+Erkläre HFS/+/X (Hierarchical File System - Dateisysteme Apple)	"<b>Allgemein</b><ul><li><i>Größten Unterschiede zwischen HFS und HFS+</i></li><li>größerer Dateien (HFS : 2GB / HFS+ : 8EB)</li><li>Mehr Dateien (HFS : 65535 / HFS+ : 4,294,967,295 (2^32 − 1))</li><li>Besserer Unterstützung für Metainformation</li><li>Längerer Dateiname (HFS : 31 / HFS+ : 255 ) möglich</li><li>Altes Berechtigungskonzept bei HFS, AppleShare (HFS+ verwendet RWX Linux)</li><li><i>Kurzum HFS, ist längst outdated aber immer noch als READ ONLY Partition bis MacOS 10.15 (2019) benutzbar.</i></li></ul><b>HFS+</b><ul><li>HFS+ unterstützt Journaling (wie alle moderen Dateisysteme), das bedeutet dass alle File System Operationen als Transaktionen passieren und diese aufgrund eines Journals auch wieder zurückgesetzt werden können.</li><li>Allerdings keine Möglichkeit für Concurrent Access von Dateien</li></ul><div><img src=""paste-5bc53e3b5ee89729166c91a0af2f6e369314d885.jpg""><br></div>"	
+Erkläre NTFS (Microsoft)	"<b>Microsoft NTFS (New Technology File System)</b><ul><li>Gängiges Dateiformat für Microsoft Windows Systeme</li><li>Ist ein Journaling Dateisystem</li><li>Existiert seit 1993 (Windows NT 3.1)</li></ul><div><img src=""paste-001403fc699b298c3ae3420c3316c69950eadd7c.jpg""><br></div>"	
+Erkläre FAT32/exFAT (Windows)	<b>Allgemein</b><ul><li>Klassisches Dateisystem für USB-Sticks / SD-Karten / USB-Festplatten.</li><li>Ein großer Vorteil ist das (fast) alle Betriebssysteme dieses Dateisystem lesen/beschreiben können.</li><li>exFAT ist eine Erweiterung von FAT32, da dies nur Filesizes bis 4 GiB und eine maximale Partitionsgröße von 2 TiB unterstützt.</li><li>Somit gut für externe Festplatten geeignet.</li></ul>	
+Erkläre ext2/3/4 (Linux)	"Allgemein<ul><li>Standard Dateisystem für die meisten Linux Systeme</li><li>Selbes Idee wie zuvor, Dateien und Datenträger sind größer geworden, somit wurden über die Jahre neue Versionen benötigt.</li><li>Größter Unterschied zu NTFS, es werden Inode-Strukturen verwendet, um Metadaten zu speichern.</li><li>NTFS verwendet hierfür den MFT.</li><li>Standard Dateisystem für die meisten Linux Systeme</li><li>Selbes Idee wie zuvor, Dateien und Datenträger sind größer geworden, somit wurden über die Jahre neue Versionen benötigt.</li><li>Größter Unterschied zu NTFS, es werden Inode-Strukturen verwendet, um Metadaten zu speichern.</li><li>NTFS verwendet hierfür den MFT.</li></ul><div><img src=""paste-91f448110242a3b2abcaab68c859a0566067c47e.jpg""><br></div>"	
+Erkläre die verschiedene Speicherschichten.	"<img src=""paste-a2a767c3a8e5d1340eec875fb080a9d1a6bba0ef.jpg"">"	
+Erkläre das Master File Table (MFT) von Microsoft NTFS.	<b>Master File Table ($MFT)</b><br><ul><li>• Ist eine relationale Datenbank</li><li>– Beinhaltet zeilenweise Einträge für Dateien und Verzeichnisse</li><li>– Beinhaltet spaltenweise Einträge für Datei-Attribute</li><li>– Einträge sind 1024 Byte groß</li></ul><br><ul><li>• Wird für die jeweilige Partition vom Betriebssystem angelegt</li><li>• Die Master File Table ist selbst eine Datei und die erste Datei, welche im Dateisystem angelegt wird.</li><li>• Enthält mindestens einen Eintrag für jede Datei ( inkl. der MFT selbst)</li></ul><div><br></div><ul><li>• Wird in der MFT Zone gespeichert</li><li>– Schützt die MFT vor Fragmentierung</li><li>– Standardmäßig werden 12,5% des Volumes exklusiv für MFT reserviert (MFT Zone)</li><li>– MFT Zone wird nicht für Speicherung von Dateien verwendet, außer das Volume hat sonst keine freien Speicherbereiche</li><li>mehr</li><li>• Volumes mit wenigen großen Dateien schreiben zuerst den nichtreservierten Bereich voll</li><li>• Volumes mit vielen kleinen Dateien schreiben zuerst die MFT Zone voll</li></ul>	
+Erkläre MFT Zone.	<div><br></div><ul><li>Aufgrund der Bedeutung des MFT für NTFS und der möglichen Auswirkungen auf die Leistung, wenn diese Datei stark fragmentiert wird, unternimmt NTFS besondere Anstrengungen, um diese Datei zusammenhängend zu halten.</li><li>NTFS reserviert 12,5 Prozent des Volumes für die ausschließliche Nutzung des MFT, bis und es sei denn, der Rest des Volumes ist aufgebraucht. Daher wird Speicherplatz für Dateien und Verzeichnisse nicht aus dieser MFT-Zone zugewiesen, bis zuerst der gesamte andere Speicherplatz zugewiesen wird.</li><li>Volumes mit einerkleinen Anzahl relativ großer Dateien erschöpfen zuerst den uneingeschränkten Speicherplatz, während Volumes mit einer großen Anzahl relativ kleiner Dateien zuerst den MFT-Zonenspeicher ausschöpfen.</li><li>Um die aktuelle Größe des MFT auf einem Windows-Computer zu ermitteln, geben Sie den dir /a $mft Befehl auf einem NTFS-Volume ein.</li></ul>	
+Erkläre MFT Entry (auch File Record)	"<div><br></div><ul><li>Enthält Informationen zu jeder Datei/Verzeichnis innerhalb der Partition.</li><li>Flags (Wie zum Beispiel Verschlüsselung)</li><li>Dateityp</li><li>Länge</li><li>Daten bzw. Pointer zu den Clustern (Run-List)</li><li>Wenn &lt;~700 Byte werden die Daten möglicherweise innerhalb der MFT gespeichert</li><li>Wird eine Datei gelöscht wird der Eintrag in der MFT nicht sofort gelöscht.</li></ul><br><img src=""paste-011f844ff751b3e2f0b5f5086b1d6998aa067e23.jpg""><br>"	
+Welche typische Records gibt es bei NTFS Attribute?	"<img src=""paste-ecc9cdd9b90d00a0857134bee561b1cfe3ac0da5.jpg"">"	
+Welche mögliche Zeitstempel gibt unter Windows-Systeme?	<b>Mögliche Zeitstempel</b><ul><li>Creation Time –Wann die Datei erstellt wurde.</li><li>Modified Time –Wann wurde der Inhalt der Datei/Verzeichnis modifiziert.</li><li>MFT Modified Time –Wann wurde der MFT Eintrag (Metadaten) zuletzt modifiziert.</li><li>Access Time –Wann wurde zuletzt auf diese Datei zugegriffen</li><li>(Bei aktuellen Windows Systemen aus Performancegründen deaktiviert)</li><li>Zwei Zeitstempelinformationen im MFT Entry vorhanden:</li><li>$STANDARD_INFORMATION und $FILE_NAME</li><li>Unterschiedliches Verhalten!</li></ul>	
+Was ist ein Alternative Data Stream (ADS - Microsoft NTFS)?	<b>Alternative Data Streams (ADS)</b><ul><li>Ein Data Stream ist eine zusammengehörende Sequenz von Bytes.</li><li>NTFS unterstützt mehrere Data Streams gleichzeitig.</li><li>Der Name des Data Streams identifiziert ein neues $Data Attribut der Datei.</li><li>Jede Dateien besitzt einen „main“ Data Stream.</li><li>„main“ Data Stream ist für alle Dateisysteme sichtbar.</li><li>Alternative Data Streams sind nur für NTFS sichtbar. Wenn eine Datei von einem NTFS-Dateisystem auf ein FAT-Dateisystem kopiert wird, gehen alternative Data Streams verloren.</li></ul>	
+Für was kann man Alternative Data Streams verwenden?	"<b>Alternative Data Stream (ADS)</b><ul><li>Kann zum „verstecken“ von Daten verwendet werden.</li><li>Ist nicht im Windows Dateiexplorer sichtbar.</li><li>Der MFT Entry enthält mehrere $DATA Attribute</li></ul><b>Beispiel:</b><ul><li>echo „meine textdatei“ &gt; text.txt</li><li>echo „secret text“ &gt; text.txt:hidden</li><li>mkdir meinVerzeichnis</li><li>echo „secret text“ &gt; meinVerzeichnis:hidden</li></ul><div><img src=""paste-cd7e89be1e63628c9daadf89c425791db04211cb.jpg""><br></div>"	
+Worin unterscheiden sich Sektor vs Cluster?	<b>Sektor:</b><ul><li>Daten werden auf der Festplatte in Sektoren (=Blöcke) gespeichert</li><li>Kleinste Einheit welche vom Betriebssystem adressiert werden kann</li><li>512Byte bzw. 4kByte</li></ul><b>Cluster:</b><ul><li>Betriebssystem fasst über das Dateisystem der Partition mehrere Sektoren zu einen Cluster zusammen</li><li>Clustergröße ist immer ein vielfaches eines Sektors</li></ul>	
+Was ist ein Cluster? Erkläre genauer.	<b>Cluster</b><ul><li>Ein Cluster ist eine logische Zusammenfassung von Sektoren eines Datenträgers.</li><li>Das Dateisystem kann im Allgemeinen nur vollständige Cluster adressieren.</li><li>Daher belegen Dateien auf einem Datenträger immer eine ganzzahlige Menge von Clustern.</li></ul><b>Die Größe eines Clusters variiert je nach Dateisystem</b><ul><li>Je größer die Cluster</li><li>desto weniger Verwaltungsaufwand muss für große Dateien aufgewendet werden</li><li>desto geringer wird die Fragmentierung einer Datei</li><li>jedoch, sind größere Cluster im Hinblick auf die rationelle Ausnutzung des Speicherplatzes eines Datenträgers nachteilig, insbesondere bei der Speicherung einer großen Zahl kleiner Dateien.</li></ul>	
+Welche unterschiedliche Arten von Slackspace (Schlupfspeicher) gibt es?	"<b>File-Slack</b><br><ul><li>freier Speicherbereich innerhalb eines Clusters</li><li>File-Slack = RAM-Slack + Drive-Slack</li></ul><b>RAM-Slack</b><br><ul><li>Letzter Sektor einer Datei wird aufgefüllt</li><li>Willkürlich Daten aus dem RAM verwendet (früher)</li></ul><b>Drive-Slack</b><br><ul><li>Bestehende Daten; werden nicht überschrieben</li></ul><div><img src=""paste-220884c3efbb0674528849313d6434d9041b952e.jpg""><br></div>"	
+Erkläre was bei Slackspace (Schlupfspeicher) passiert.	"<img src=""paste-05ab8344993dafe89afa7976e43642e00031cd6b.jpg""><br><img src=""paste-59885c22ba20fa5e88417ebc1a705d58c5a2dec3.jpg"">"	
+Was ist Fragmentierung?	<b>Fragmentierung</b><ul><li>Ist eine Herausforderung beim Wiederherstellen von Daten</li><li>Speicherung von Daten in verteilten Blöcken</li><li>Blöcke liegen nicht hintereinander</li><li>Lineare Fragmentierung</li><li>Nicht-Lineare Fragmentierung</li></ul>	
+Welche Ursachen gibt es für Fragmentierung?	"<b>Ursachen für Fragmentierung</b><ul><li>Dateiänderung</li><li>Vergrößerung</li><li>Verkleinerung</li><li>Löschung</li><li>Geringer Speicherplatz = Hoher Fragmentierungsgrad</li></ul><br><img src=""paste-12849137fed4130d947f740435d4bf1235623ba4.jpg""><br>"	
+Welche Spuren können analysiert werden?	<b>Welche Spuren können analysiert werden?</b><ul><li>Datei-Download</li><li>Ausführen von Programmen</li><li>Öffnen von Dateien / Verzeichnissen</li><li>Ehemals existente Dateien</li><li>Positionsdaten</li><li>Externe Geräte (USB Devices)</li><li>Anmeldeinformationen</li><li>Internet Browser</li></ul>	
+Wo wird bei einer Datenrekonstruktion überall gesucht?	"<img src=""paste-b37a8edbb51abba7af854bdeffb4fb6496b3ae6e.jpg"">"	
+Welche ehemals existenter Dateien kann man wiederherstellen?	<b>Partition</b><ul><li>Ganze System-oder Datenpartition einer Festplatte</li></ul><b>Daten aus dem Dateisystem</b><ul><li>Dokumente, Bilder, Videos, Audio-Dateien, …</li></ul><b>Anwendungsdaten</b><ul><li>Mails aus OST-/PST-Dateien</li><li>Einträge aus Datenbanken</li><li>…</li></ul>	
+Worin unterscheiden sich Dateitpy vs Dateierweiterung?	Die Dateierweiterung zeigt äußerlich an, welchem Programm eine Datei zugeordnet ist, während der tatsächliche Dateityp durch die interne Struktur und Signatur der Datei bestimmt wird und unabhängig von der sichtbaren Erweiterung bleibt. (ZUSAMMENGEFASST VON CHAD GPT)<br><ul><li><br></li></ul><b>Die Dateierweiterung„bild.JPG“</b><ul><li>Die Dateiendungwirdeingesetzt, um das Format einerDateierkennbarzumachen, um sieso beispielsweisegleichmiteinempassendenProgrammöffnenzukönnen.</li><li>Sagtnichtsüberden Inhaltaus</li></ul><b>Dateityp</b><ul><li>Kann nurdurcheinenAnalyse der Datei, z.B.überdie Datei-Signaturermitteltwerden</li><li>Bei einerforensischenAnalyse wirddie Datei-SignaturjederDateimiteinerDatenbankabgeglichenum den tatsächlichenDateitypzuermitteln</li></ul><b>Dateisignaturanalyse/ Dateiverifizierung:</b><ul><li>Wirdgenutztum den Dateitypenzuverifizieren.</li><li>UmbenannteDateienkönnenmittelsdieserAnalyse identifiziertwerden.</li></ul><br>	
+Worin unterscheiden sich Dateisignatur vs Dateiheader?	Dateisignatur und Dateiheader sind charakteristische Informationen am Anfang einer Datei, die in der Forensik zur Identifikation, Analyse und Erkennung von Manipulationen oder Inkonsistenzen genutzt werden – selbst dann, wenn Dateinamen oder -erweiterungen verändert wurden.	
+Welche möglichen Ursachen gibt es für die Dateiwiederherstellung?	<b>Hardwarefehler oder physikalische Beschädigung des Datenträgers</b><ul><li>Festplattenkontroller defekt</li><li>Laufwerksfehler -Servomotor defekt</li></ul><b>Softwarefehler / Benutzerfehler</b><ul><li>Dateien wurden gelöscht (versehentlich oder absichtlich)</li><li>Betriebssystemfehler (Systemabsturz)</li><li>Konfigurationsproblem bei RAID-Kontroller</li></ul>	
+Was ist File Carving und welchen Sinn und Zweck hat es?	<b>Begriffsdefinition „File Carving“</b><ul><li>File Carving ist eine forensische Technik zum Wiederherstellen von Dateien.</li><li>Die Wiederherstellung basiert auf File-Strukturen und deren Inhalt und nicht auf Metadaten des Filesystems.</li></ul><b>Sinn und Zweck?</b><ul><li>Wiederherstellung von Dateien</li><li>basiert auf File Struktur</li><li>bei unbekannter Filesystem-Struktur</li><li>bei manipulierten/gelöschten Filesystem-Metadaten</li></ul>	
+Welche relevante Bereiche, können Fragmente von Dateien beinhalten?	<ul><li>Gelöschte Elemente</li><li>Cluster/Blöcke, die als fehlerhaft markiert wurden</li><li>Host Protected Area (HPA) / Device Configuration Overlay (DCO)</li><li>Unallocated Areas (freier Speicher im FS)</li><li>Partition Slack</li><li>File Slack</li><li>...</li></ul>	
+Welche verschiedene Carving Techniken gibt es (File Structure Based)?	<b>Header / Footer Carving</b><ul><li>Identifikation von Header und Footer über Erkennung spezieller Byte-Zeichenfolgen</li><li>Byte-Zeichen dazwischen werden als Datei interpretiert</li></ul><b>Header/Embedded Length Carving</b><ul><li>Identifiziert Header einer Datei</li><li>Datei wird über Länge, die im Dateiheader angegeben ist identifiziert</li></ul><b>Header/Maximum Size Carving</b><ul><li>Identifiziert Header einer Datei</li><li>Datei wird über angenommene Länge des Dateityps identifiziert</li><li>Länge basiert auf Erfahrungswerten und führt oft zu sehr großen Dateien</li></ul>	
+Welche Probleme gibt es beim File Carving?	<ul><li><b>Viele unterschiedliche Dateiformate welche bei der Wiederherstellung erkannt werden müssen</b></li><li><b>Fragmentierung</b></li><li>Lineare Fragmentierung</li><li>Nichtlineare Fragmentierung</li><li><b>Identifikation relevanter Daten</b></li><li>Einschluss unerwünschter Daten</li><li>Auslassung erwünschter Daten</li><li><b>Zeitaufwand und Komplexität</b></li><li>Bit-für-Bit lesen ist langsam</li><li><b>Integrität der Dateien kann nicht gewährleistet werden</b></li></ul>	
+Welche Typ-Status und welche Dateiformat-Konsistenz gibt es?	<b>Typ-Status</b><ul><li>Not verified–Anfänglicher Status</li><li>Irrelevant–Datei &lt; 8 Bytes</li><li>Not in list–Endung und Signatur nicht erkannt</li><li>Confirmed –Endung und Signatur wurden erkannt und passen zusammen</li><li>Not confirmed –Endung erkannt, Signatur allerdings nicht</li><li>Newly Identified –Keine oder unbekannte Endung, Signatur bekannt</li><li>Mismitch detected–Endung und Signatur wurden erkannt und passen nicht zusammen</li></ul><b>Dateiformat-Konsistenz:</b><ul><li>OK –Konsistenz der Datei mit hoher Wahrscheinlichkeit valide und die Datei somit lesbar</li><li>Unknown–Keine Aussage über die Konsistenz möglich</li><li>Irregular –Konsistenz der Datei mit hoher Wahrscheinlichkeit korrput, Datei nicht lesbar</li></ul>	
+Welche Vor- und Nachteile bietet die Analyse mit nicht forensischer Software?	<b>Vorteile:</b><ul><li>Sehr flexible einsetzbar. Geringe Kosten.</li><li>Einfach bedienbar.</li></ul><b>Nachteile:</b><ul><li>Analyse basierend auf Dateiendungen (XYZ.docx). Keine Typverifizierung möglich.</li><li>Möglicherweise Probleme mit zu langen Pfaden.</li><li>Unter Umständen versteckte Dateien nicht sichtbar bzw. Dateien im ADS nicht sichtbar.</li><li>Keine automatische Analyse von Dateien in Archiven möglich.</li><li>Möglicherweise Probleme mit den Zugriffsrechten.</li></ul>	
+Welche Vor- und Nachteile bietet die Analyse mit forensischer Software?	<b>Vorteile:</b><ul><li>Analyse basierend auf tatsächlichem Dateityp möglich.</li><li>Dateiwiederherstellung von gelöschten Dateien möglich.</li><li>Keine Probleme mit zu langen Pfaden.</li><li>Analyse von Dateien innerhalb von Archiven möglich.</li><li>Identifikation von versteckten Dateien (z.B. ADS)</li><li>Keine Einschränkungen durch Zugriffsrechte.</li></ul><b>Nachteile:</b><ul><li>Kosten</li><li>Durchlaufzeit</li></ul>	
+Was sind die Grundlagen bei der Sicherung von Beweismitteln?	<ul><li>Grundsätze der Forensik einhalten</li><li>Digitale Daten sind sehr fragil. Ein einziger Fehler kann ausreichen um eine gravierende Veränderung auszulösen.</li><li>Keine Analysehandlungen auf den Originaldaten ausführen, es sei denn es ist nicht anders möglich!</li><li>Live Forensik</li><li>Backups von Datensicherungen anfertigen.</li><li>Nachvollziehbare Dokumentation aller Arbeitsschritte.</li></ul>	
+Was sind die grundlegende Aspekte im Umgang mit Beweismitteln?	<b>Auditierbar</b><ul><li>Ein unabhängiger Dritter muss die Tätigkeiten bewerten können.</li><li>Dokumentation der Vorgehensweise und Maßnahme</li></ul><b>Wiederholbar</b><ul><li>Ein unabhängiger Dritter mit geeigneten Fähigkeiten muss anhand der vorhandenen Dokumentation die selben Ergebnisse erzielen.</li></ul><b>Vergleichbar</b><ul><li>Durch Einsatz derselben Messmethode muss das selbe Ergebnis erzielt werden.</li></ul><b>Begründbar</b><ul><li>Man sollte den Einsatz aller Maßnahmen und Methoden begründen können.</li></ul>	
+Was sind die Grundlagen für die Sicherstellung von Beweismittel?	<b>Identification</b><ul><li>Umfasst die Suche, Identifikation und Dokumentation potentieller digitaler Beweismittel</li></ul><b>Collection (Sammlung):</b><ul><li>Physische Sicherstellung der Beweismittel und Sammlung in einem Labor zur Datensicherung</li></ul><b>Acquisition (Datensicherung):</b><ul><li>Erstellen einer digitalen Beweismittelkopie (Full-disk Image, Partition, Dateien)</li></ul><b>Preservation (Erhaltung und Schutz vor Manipulation):</b><ul><li>Es muss sichergestellt werden, dass die Beweismittel seit der Datensicherung nicht modifiziert wurden</li></ul>	
+Welche Vorbereitende Maßnahmen gibt es für die Identifikation von Beweismitteln?	<b>Equipment sollte immer Einsatzbereit und benötigte Software installiert und auf dem aktuellsten Versionsstand sein.</b><ul><li>Welche Dinge benötigt man vor Ort bei der Sicherstellung von Beweismittel?</li></ul><b>Möglichst viele Informationen, sowohl vor als auch während des Einsatzes einholen!</b><ul><li>Durchführen von Interviews zum Sachverhalt</li><li>Informationen kritisch hinterfragen (W-Fragen –Wer, Was, Wann, Wo, Wie, …)</li><li>Ansprechpersonen ermitteln</li><li>Aufbau der IT-Infrastruktur (Wo sind welche Daten gespeichert)</li><li>Zeitraum einschränken</li></ul><b>Checklisten mit Fragen mitnehmen!</b><br>	
+Welche Speicherorte von elektronischen Beweismitteln kennst du?	<b>Client Software</b><br><ul><li>E-Mail-Client (Gesendete Objekte, Inbox, Archive, Gelöschte Objekte, Adressen, Header)</li><li>Office-Daten (lokal, Home-Laufwerk, Gruppen-Laufwerk)</li><li>Schlüsselmaterial zu Daten/Applikationen (Passworte, Private Keys, Dongles, Bitlocker Keys)</li><li>Internet-Browser (Browser-History, Suchmaschinen, Temporäre Dateien, Cookies etc.)</li></ul><b>Server Software</b><br><ul><li>E-Mail-Server (Logs, E-Mail-Daten-Backups, Disaster-Recovery-Daten)</li><li>E-Mail-Gateway (Logs)</li><li>Internet-Gateways (Logs)</li><li>Applikationen</li><li>Datenbanken</li></ul>	
+Wie evaluiert man die technischen Möglichkeiten für die Sicherung von Beweismitteln?	<b>Nachdem die relevanten Daten identifiziert wurden muss entschieden werden, auf welche Art die Daten gesichert werden sollen:</b><ul><li><b>Collection:</b> Mitnahme bzw. Ausbau des gesamten Geräts oder Datenträgers</li><li><b>Acquisition</b>:Datensicherung des Datenträgers bzw. Geräts</li></ul><b>Welche Art der Sicherung gewählt wird, hängt von vielen Faktoren ab und muss vor Ort entschieden werden</b><ul><li>(Art der Daten bzw. Flüchtigkeit, Verschlüsselung, Kritikalität, rechtliche Anforderungen, Ressourcen, Kundenwunsch etc.).</li></ul><b>Grundsätzlich sollte der Forensiker darauf achten, möglichst viele relevanten Daten zu sichern. Trotzdem sollen aber nicht zu viele Daten gesichert werden, da die Auswertung dann unnötig in die Länge gezogen wird!<br><br>Die Priorisierung der zu sichernden Daten erfolgt auf Basis der Halbwertszeit!</b><br>	
+Wie sieht die Sicherungsreihenfolge von Beweismitteln aus?	<b>Die Halbwertszeit der Informationen bestimmt die Sicherungsreihenfolge</b><ol><li>Routingtabellen, ARP-Cache, Prozessliste, angemeldete User, Netzstatus, Kerneldaten, Hauptspeicherinhalt (RAM)</li><li>Temporäre Daten, SWAP-Bereiche etc.</li><li>Der komplette Inhalt der Datenträger</li><li>Relevante Logging und Monitoringdaten auf zentralen Loggingservern</li><li>Physische Konfigurationen und Netzwerktopologien</li><li>Archivierte Medien</li></ol>	
+"Erkläre die Sicherungsart von Beweismitteln: ""Collection"""	<ul><li>Mitnahme des gesamten Beweismittels zur weiteren Sicherung, Analyse bzw. Verwahrung.</li><li>Dokumentation des IST-Zustandes (Fotos, Skizzen) und aller Aktionen die durchgeführt werden!</li><li>Manchmal kann die Veränderung des Mediums bei der Collection nicht ausgeschlossen werden (z.B. Herunterfahren eines Servers)</li></ul><br>Nach dem Ausbau:<br><ul><li>Beschriftung des Datenträgers (bspw. durch Sticker)</li><li>Sichere Verpackung (Stoßsicher und vor Veränderung geschützt bspw. Versiegelung)</li><li>Chain of CustodyDokumentation (Wer, Was, Wann, Wo, Wohin etc.)</li></ul>	
+"Erkläre die Sicherungsart von Beweismitteln: ""Acquisition"""	<ul><li><b>Erstellen von Datensicherungen des Beweismittels</b></li><li>Original-Datenträger verbleibt üblicherweise nicht beim Forensike</li><li><b>Arten der Datensicherungen</b></li><li>Vollständige Datensicherung (1-zu-1 Kopie des Datenträgers oder Partition)</li><li>Logische Datensicherung (einzelne Verzeichnisse)</li><li><b>Vollständige Datensicherung ist zu bevorzugen (Warum?)</b></li><li><b>Vollständige Dokumentation:</b></li><li>IST-Zustand (Fotos, Screenshots etc.)</li><li>Eingesetzte Tools (inkl. Version)</li><li>Befehle und Ausgabe des Tools</li></ul>	
+Was versteht man unter einer vollständigen Datensicherung?	<ul><li>1-zu-1 Kopie des Datenträgers oder einer Partition</li><li>Enthält nicht belegte Speicherbereiche des Datenträgers bzw. der Partition und Slack-Spaces</li><li>Kein Risiko, dass nachträglich relevante Daten vergessen wurden</li><li>Durchlaufzeit der Datensicherung um einiges länger als bei Logischen Datensicherungen</li><li>Größere Datenmenge des resultierenden Images</li><li>Verschlüsselte Datenträger können mit vollständigen Datensicherung Probleme bereiten</li><li>Passwort ev. nicht bekannt</li><li>Kann das Analyseprogramm mit der Verschlüsselung umgehen (z.B. LUKS, Bitlocker, WinMagic etc.)</li><li>Image muss vor der Weiterverarbeitung ev. entschlüsselt werden</li><li>Funktioniert nur mit Admin-Rechten!</li></ul>	
+Was ist ein Raw-Image (RAW, DD)?	<b>Raw-Image (RAW, DD)</b><ul><li>Einfaches 1-zu-1 Abbild des Datenträgers bzw. Partition</li><li>Erstellung bspw. mithilfe von DD (Linux)</li><li>Keine Prüfsummen</li><li>Keine Komprimierung</li></ul>	
+Was ist ein Forensisches Disk-Image-Format?	<b>Forensische Disk-Image-Formate</b><ul><li>Speziell für forensische Datensicherungen entwickelt (Logging, Integritätsprüfung etc.)</li><li>„Container“ für das 1-zu-1 Abbild</li><li>Speichert zusätzliche Informationen</li><li>Unterstützt Prüfsummen, Komprimierung, Verschlüsselung, Splitting in mehrere Dateien</li><li>Beispiel Expert Witness Format (EWF, .E01-Images)</li></ul>	
+Erkläre eine logische Datensicherung.	<ul><li>Es werden nur bestimmte Verzeichnisse bzw. Dateien gesichert</li><li>Enthält keine nicht belegten Speicherbereiche und Slack-Spaces</li><li>Beim Sichern müssen Filesystem-Berechtigungen beachtet werden (Berechtigungsprobleme!)</li></ul>Einsatz hauptsächlich wenn :<br><ul><li>zu viele Daten um alles zu sichern (bspw. Netzlaufwerke, Datenbankserver)</li><li>nur sehr wenige Daten müssen gesichert werden</li><li>System ist zu wichtig zum Ausschalten</li><li>vollständige Datensicherung nicht möglich (z.B. verschlüsseltes System ohne bekanntes Passwort)</li><li>gesetzliche Einschränkungen</li><li>System enthält Daten von mehreren Kunden</li></ul>	
+Was ist ein Write Blocker und welche Typen gibt es?	<b>Write Blocker</b><ul><li>werden zwischen Festplatte und Hostsystem geschaltet</li><li>unterdrücken Schreibzugriffe auf die Festplatte</li><li>Write Blocker gibt es für alle gängigen Interfaces</li><li>IDE, SATA, USB, Firewire SAS ....</li><li>werden auch als Forensic Bridge bezeichnet</li></ul><b>Typen</b><ul><li>Hardware Write Blocker</li><li>Software Write Blocker</li></ul>	
+Wie funktioniert ein Hardware Write Blocker?	"<img src=""paste-da366da165a07511b0158b09dbd5092574e8ba17.jpg"">"	
+Wie funktioniert ein Software Write Blocker?	"<img src=""paste-817995f1e2565f546919011af70a95fdb3b0655b.jpg"">"	
+Was passiert nach der Datensicherung?	<b>Verifikation der Datensicherung</b><ul><li>Prüfsumme (MD5 bzw. SHA1) der Datensicherung und des originalen Datenträgers</li><li>Stimmen die Prüfsummen überein, war die Datensicherung erfolgreich</li></ul><b>Die Verifikation kann anschließend bei Bedarf immer wieder durchgeführt werden</b><ul><li>Vor allem nach jedem Kopieren über unterschiedliche Medien hinweg (bspw. von USB-Festplatte auf Netzlaufwerk), sollte die Integrität überprüft werden</li></ul><b>Versiegelung des Datenträgers (falls notwendig bzw. möglich)<br><br>Dokumentation der durchgeführten Arbeitsschritte<br><br>Backups der Datensicherung erstellen!!</b><br>	
+"<div>Was
+ist eine Spur?&nbsp;</div>"	"<div>materiellen
+Veränderungen, die im Zusammenhang mit einem relevanten Ereignis entstanden
+sind und zur Tataufklärung beitragen können, da Rückschlüsse auf den Tatablauf,
+die Tatumstände sowie Hinweise auf den / die Täter gezogen werden können.</div>"	
+"<div>Welche
+Arten von Spuren gibt es?</div>"	"<div><b>Technische
+Formspuren:</b>
+Veränderungen an Personen und / oder Sachen bzw. Objekte</div>
+<div><b>Materialspuren:</b> Rückstände eines Gegenstandes (z. B.
+Abriebe, Anriebe, Späne)</div>
+<div><b>Digitale
+Spuren:</b> basieren auf
+Daten, die in Computersystemen gespeichert sind oder zwischen Ihnen übertragen
+wurden. Dabei sind digitale Spuren nicht mit materiellen Spuren gleichzusetzen.
+Digitale Spuren werden erst durch ihre Interpretation von physischen Spuren
+über unterschiedliche Interpretationsebenen zu einer verwertbaren digitalen
+Spur.</div>"	
+"<div>Was
+ist ein Indiz?</div>"	"<div>Ist ein
+Hinweis, der für sich allein oder in einer Gesamtheit mit anderen Indizien den
+Rückschluss auf das Vorliegen einer Tatsache/Sachverhalts zulässt.</div>"	
+Was ist ein Beweis?	"Feststellung
+eines Sachverhalts als Tatsache in einem Gerichtsverfahren aufgrund
+richterlicher Überzeugung"	
+"<div>Welche
+Anforderungen gibt es an Ermittlungen?</div>"	"<div><b>Akzeptanz:</b> Es müssen allgemein anerkannte
+Methoden verwendet werden, deren Verwendbarkeit nicht in Frage gestellt wird. </div>
+<div>• <b>Glaubwürdigkeit:</b>
+Die Analyseschritte müssen nachvollziehbar sein. Die Funktionalität und
+Robustheit der Methoden muss nachweisbar sein. </div>
+<div>• <b>Wiederholbarkeit:</b>
+Alle durchgeführte Schritte müssen von unabhängigen Dritten wiederholbar sein
+und die gleichen Ergebnisse liefern. </div>
+<div>• <b>Integrität:
+</b>Die Integrität der Daten muss zu jedem Zeitpunkt gesichert und nachweisbar
+sein. </div>
+<div>• <b>Ursache
+und Auswirkung</b>: Durch die Auswahl der Methoden müssen logisch,
+nachvollziehbare Verbindungen zwischen Personen, Ereignisse und Beweisspuren
+hergestellt werden. •</div>
+<div><b>&nbsp;Dokumentation</b>: Jede Tätigkeit im Prozess muss
+angemessen dokumentiert werden.</div>"	
+"<div>Wie
+läuft das SAP-Modell Forensik-Prozess ab?</div>"	"<div>1.&nbsp;&nbsp;&nbsp; <b>Secure:</b></div>
+<div>.&nbsp; &nbsp;&nbsp;„Tatort“ und Untersuchungsbereich absichern</div>
+<div>&nbsp; &nbsp;&nbsp;● Beweisspuren sorgfältig sichern </div>
+<div>&nbsp; &nbsp; ●
+Integrität der Daten bewahren bzw. nachweisen </div>
+<div>&nbsp; ●
+Rechtmäßigkeit beachten</div>
+<div>2.&nbsp;&nbsp;&nbsp;<b> &nbsp;Analyze</b></div>
+<div>&nbsp; &nbsp; ●
+Spuren sorgfältig auswerten </div>
+<div>.&nbsp;&nbsp; ●
+Ergebnisse objektiv bewerten</div>
+<div>&nbsp; &nbsp;&nbsp;&nbsp;● Schlüsse kritisch hinterfragen</div>
+<div>&nbsp; <b>&nbsp;3. Present</b></div>
+<div>&nbsp; &nbsp; Detaillierungsgrad
+und Methoden sind abhängig von der Fragestellung </div>
+<div>&nbsp; &nbsp;●
+Erkenntnisse schlüssig und nachvollziehbar dokumentieren </div>
+<div>&nbsp; &nbsp;●
+Erkenntnisse überzeugend zielgruppenorientiert präsentieren</div>"	
+"<div>Welche
+Areten von Beweismittel gibt es?</div>"	"<div>•<b> Physikalische</b> – Dokumente </div>
+<div>• <b>Elektronische</b> – Flüchtige, fragile und temporär
+zugreifbare Daten – Persistente Daten</div>"	
+"<div>Was
+sind Strukturierte Daten</div>"	"<div>• Die Daten
+weisen eine gleichartige Struktur auf. </div>
+<div>•
+Typischerweise Datenbanken oder Buchhaltungsdaten</div>
+<div>ERP-Systeme,
+Datenbanken</div>"	
+"<div>Unstrukturierte
+Daten</div>"	"<div>• Keine
+Struktur zur automatisierten Analyse nutzbar</div>
+<div>&nbsp;• Beispielsweise Dokumente, beliebige Texte,
+Grafiken</div>
+<div>Word,
+E-Mail,PPT,PDF,Excel, Textdateien</div>"	
+"<div>Semi-Strukturierte
+Daten</div>"	"<div>• Daten
+können eine Struktur aufweisen </div>
+<div>• Benötigen
+Analyse vor der Verarbeitung </div>
+<div>•
+Beispielsweise HTML, XML, Protokolldateien</div>"	
+"<div>Was
+ist da Ziel von IT-Forensik?</div>"	"<div>Das Ziel der
+IT-Forensik ist es, einen Sachverhalt (z.B. kriminelle Handlung) soweit wie
+möglich nachweisen bzw. rekonstruieren zu können.</div>"	
+"<div>Was
+bedeutet Forensik?</div>"	"<div>Forensik im
+alltäglichen Gebrauch bedeutet die Identifikation, Analyse und Rekonstruktion
+von kriminellen Handlungen</div>"	
+Welche Untergruppen der IT Forensensik gibt es?	"<div><b>Datenträger-Forensik</b></div>
+<div><b>Mobile-Forensik</b></div>
+<div><b>Cyber-Forensik</b> –
+Aufklärung von Hacking-Angriffen</div>
+<div><b>eDiscovery </b></div>
+<div>– Daten lokalisieren,
+sichern und durchsuchen um diese als Beweismittel in zivil</div>
+<div>- oder strafrechtlichen
+Verfahren anwenden zu können – Forensische Datenanalyse </div>
+<div>– untersucht strukturierte
+Daten nach Vorfällen wirtschaftskrimineller Handlungen.</div>"	
+"<div>Wieso
+ist es schwer das Nicht Existieren von Daten in der IT-Forensik zu beweisen`?</div>"	"<div>Mögliche Kritikpunkte </div>
+<div>– Hat man nicht ordentlich
+gesucht; </div>
+<div>– Wurden die Daten
+überschreiben oder absichtlich sicher gelöscht?</div>
+<div>&nbsp;– Waren die Daten nie auf dem System
+vorhanden? </div>
+<div>• Unterscheidung quasi nicht möglich!</div>"	
+"<div>Welche
+Einsatzbereiche in der Welt hat die IT Forensik?</div>"	"<div>Klärung von Streitfragen zwischen Personen und
+Unternehmen:</div>
+<div>Als Sachverständiger für die Staatsanwaltschaft oder bei
+Privatgutachten:</div>"	
+"<div>Welche
+Behörden Können Hausdurchsuchungen Durrchführen?</div>"	"<div>Europäische Kommission</div>
+<div>Bundeswettbewerbsbehörde</div>
+<div>Wirtschaftspolizei / Staatsanwaltschaft /
+Korruptionsstaatsanwaltschaft</div>"	
+"<div>Was
+sind die Folgen von einem Verstoß gegen das Kartellrecht?</div>"	"<div>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Geldbuße bis zu 10% des weltweiten
+Jahresumsatzes der Unternehmensgruppe (Konzern) im letzten Geschäftsjahr</div>
+<div>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Imageverlust </div>
+<div>• Sehr hoher finanzieller und zeitlicher Aufwand bei
+einem Verfahren</div>
+<div>• Schadenersatzforderungen von Kunden und Wettbewerbern</div>"	
+"<div>Was
+sind PST-Dateien in Outlook?</div>"	"<div>– Persönlicher Speicherordner wo Kopien von
+E-Mail-Nachrichten, Kalenderereignisse und E-Mail-Regeln gespeichert werden </div>
+<div>– Kann auch zur Erstellung von Sicherungskopien oder zum
+Exportieren von Elementen des E-Mail-Kontos verwendet werden</div>"	
+"<div>Was
+sind OST-Dateien in Outlook?</div>"	"<div>– Speichert
+Kopien von Elementen von IMAP- oder MAPI-Konten </div>
+<div>–
+OST-Dateien werden automatisch mit dem entsprechenden Mail-Server
+synchronisiert (bei bestehender Internetverbindung)</div>"	
+"<div>Wie
+Unterscheiden sich von Pst Dateien – und OST Dateien</div>"	"<div>– PST-Dateien enthalten die tatsächlichen Daten,
+wohingegen OST-Dateien die zwischengespeicherten Dateien enthalten. </div>
+<div>– PST-Dateien können z.B. auf andere Computer verschoben
+und importiert werden</div>"	
+<div>Welche&nbsp; Wert haben Outlook OST-PST Datein für die Forensik</div>	"<div>–
+Wiederherstellen von gelöschten E-Mail-Nachrichten </div>
+<div>–
+Wiederherstellen von gelöschten Kalenderereignissen</div>"	
+"<div>Was
+ist die Windows Registry und wie ist diese aufgebaut?</div>"	"<div>Besteht aus
+Schlüsseln (Keys) und Einträgen (Entries oder Values)</div>
+<div><b>Schlüssel</b>: ähnlich wie Ordner auf der
+Dateiebene und beinhalten weitere Einträge und Unterschlüssel </div>
+<div><b>•
+Eintrag:</b>
+Key-Value-Pair, wobei der Wert dieses Paares unterschiedliche Datentypen
+aufweisen kann</div>"	
+"<div>Welche
+Hauptschlüssel hat die Windows Registry?#</div>"	"<div>HKEY_CLASSES_ROOT
+(HKCR)</div>
+<div>•
+HKEY_CURRENT_USER (HKCU)</div>
+<div>•
+HKEY_LOCAL_MACHINE (HKLM)</div>
+<div>• HKEY_USERS
+(HKU)</div>
+<div>•
+HKEY_CURRENT_CONFIG (HKCC)</div>"	
+"<div>Was
+steht im HKEY_CLASSES_ROOT (HKCR) Registry?</div>"	"<div>–
+Informationen zu Dateiendungen und unterstützte Dateitypen</div>"	
+"<div>Was
+steht im • HKEY_CURRENT_USER (HKCU)</div>"	"<div>–
+Informationen des aktuell angemeldeten Benutzers </div>
+<div>– Spiegelung
+von HKEY_USERS\</div>"	
+"<div>Was
+steht im • HKEY_LOCAL_MACHINE (HKLM)</div>"	"<div>– Das ganze
+System betreffende Informationen, nicht nur auf Benutzer bezogen</div>"	
+"<div>Was
+steht im HKEY_USERS (HKU)</div>"	"<div>– Schlüssel
+der vorhandenen Benutzerkonten am System&nbsp;</div><div>– Jeder Benutzer hat einen eigenen
+Security Identifier (SID)</div>"	
+"<div>Was
+steht im HKEY_CURRENT_CONFIG (HKCC)</div>"	"<div>– Spiegelung
+von HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Hardware Profiles\Current</div>"	
+"<div>Warum
+wird Memory Forensics gemacht?</div>"	"<div>ALLES in
+einem Betriebssystem durchläuft den Arbeitsspeicher in </div>
+<div>Prozesse und
+Threads </div>
+<div>• Malware
+(inkl. Rootkits) </div>
+<div>•
+Netzwerkverbindungen, -Sockets, -URLs, IP-Adressen</div>
+<div>&nbsp;• Filehandles / offene Dateien</div>
+<div>•
+Benutzer-“Content“ – Passwörter, gecachte Informationen, Zwischenablage etc. </div>
+<div>•
+Schlüsselmaterial (z.B. Verschlüsselungsschlüssel) </div>
+<div>• Software-
+und Hardware-Konfigurationsinformationen </div>
+<div>•
+WINDOWS-Registry-Schlüssel und -Protokolle (z.B. Event Logs)</div>"	
+"<div>Welche
+Vorteile hat Memory Forensics?</div>"	"<div>• Gute
+Fundstelle um maliziöse Aktivitäten von Software zu identifizieren</div>
+<div>•
+Analysemöglichkeiten und Nachverfolgung von kürzlichen Aktivitäten am System</div>
+<div>• Sammlung
+von Informationen/Beweisen, welche sonst nicht aufzufinden sind</div>"	
+"<div>Wie
+funktioniert Process Hiding?</div>"	"<div>Prozesse&nbsp;werden in Double Linked List gespeichert,
+wenn ich Pointer des Vorgänger und Nachfolger Prozess verändere „existiert“
+mein Prozess quasi nicht</div><div><img src=""paste-5634cd12e2decba7f3b2de02ad80487e216a18b7.jpg""><br></div>"	
+<div>Was ist Partitionierung?</div>	"<div>Zusammenhängende Teil des Speicherplatzes eines Datenträgers</div>
+<div>&nbsp;• Sind voneinander
+unabhängig und werden vom Betriebssystem wie „eigene“ Laufwerke behandelt (
+DualBoot) </div>
+<div>• Eigenes Dateisystem pro Partition </div>
+<div>• Steuerung und Adressierung der Partitionen über
+Partitionstabelle (MBR, GPT, LVM, BSD) </div>
+<div>• Softwarefehler sind in der Regel nicht
+partitionsübergreifend </div>
+<div>• Erlaubt Software-seitige Verschlüsselung einzelner
+Bereiche einer Festplatte </div>
+<div>• Erlaubt eine besserer Strukturierung der Dateisysteme</div>"	
+<div>Was ist der Master Boot Record?</div>	"<div>Befindet sich im ersten Sektor des Datenträgers </div>
+<div>• MBR beinhaltet die Beschreibung von bis zu vier
+Partitionen </div>
+<div>3 Primary File System Partitionen</div>
+<div>1 Secondary File System Partition</div>
+<div>&nbsp;– Diese beinhaltet
+bei Bedarf weitere Partitionen </div>
+<div>– Adressierung über Partitionstabelle ähnlich dem MBR</div>"	
+"<div>Welche Daten über Partionen
+Stehen im MBR?</div>"	"<div>• MBR beinhaltet die Beschreibung von bis zu vier
+Partitionen </div>
+<div>– Start- und Ende-Adresse – Anzahl an Sektoren – Typ der
+Partition – Flags</div>"	
+"<div>Wie ist eine GUID Partition
+Table aufgebaut?</div>"	"<img src=""paste-bd565bca5153654b2b7b2794cebb497184a84a4c.jpg"">"	
+"<div>Was sthet in der GUID Partion
+Table GPT?</div>"	"<div>Enthält MBR (Protective MBR) mit einem Partitionseintrag zur
+Rückwärtskompatiblität</div>
+<div>• GPT Header</div>
+<div>• Primäre GUID-Partitionstabelle</div>
+<div>Partitionen </div>
+<div>• Backup des GPT Headers und der Partition Table</div>"	
+"<div>Welche inhalte hat der GPT
+Header`</div>"	"<div>– Position und Größe der Partition Table </div>
+<div>– Checksum über Header und Partition Table </div>
+<div>– Start- und Ende-Adresse des gesamten Partitionsbereiches</div>"	
+"<div>Was sehet um Primären
+GUID-Partitionstabelle?</div>"	<div>– Start- und Ende-Adresse – Typ – Name – Flags – GUID Value</div>	
+"<div>Wie
+ist der MFT Strukturiert?</div>"	"<div><b>Ist eine relationale Datenbank </b></div>
+<div><b>– Beinhaltet zeilenweise Einträge für Dateien und
+Verzeichnisse </b></div>
+<div><b>– Beinhaltet spaltenweise Einträge für Datei-Attribute </b></div>
+<div><b>– Einträge sind 1024 Byte groß</b></div>"	
+"<div><b>Wer legt das MFT an und auf was
+bezieht sich ein MFT`?</b></div>"	"<div><b>Wird für die jeweilige Partition vom Betriebssystem
+angelegt</b></div>"	
+"<div><b>Was ist das besondere an der MFT
+Zone?</b></div>"	"<div><b>– Schützt die MFT vor Fragmentierung</b></div>
+<div><b>&nbsp;– Standardmäßig
+werden 12,5% des Volumes exklusiv für MFT reserviert (MFT Zone)</b></div>"	
+"<div><b>Dürfen normale Dateien in die MFT
+Zone geschrieben werden?</b></div>"	"<div><b>MFT Zone wird nicht für Speicherung von Dateien
+verwendet, außer das Volume hat sonst keine freien Speicherbereiche mehr</b></div>
+<div><b>• Volumes mit wenigen großen Dateien schreiben zuerst den
+nichtreservierten Bereich voll </b></div>
+<div><b>• Volumes mit vielen kleinen Dateien schreiben zuerst die
+MFT Zone voll</b></div>"	
+"<div><b>Was ist ein MFT Entry (File
+Record)</b></div>"	"<div><b>Enthält Informationen zu jeder Datei/Verzeichnis
+innerhalb der Partition.</b></div>
+<div><b>&nbsp;– Flags (Wie zum
+Beispiel Verschlüsselung) </b></div>
+<div><b>– Dateityp </b></div>
+<div><b>– Länge </b></div>
+<div><b>– Daten bzw. Pointer zu den Clustern (Run-List)</b></div>
+<div><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Wenn•
+700 Byte werden die Daten möglicherweise innerhalb der MFT gespeichert</b></div>
+<div><b>• Wird eine Datei gelöscht wird der Eintrag in der MFT
+nicht sofort gelöscht.</b></div>"	
+"<div><b>Welche Arten von Zeitstempeln
+kenn Mricrosoft NTFS?</b></div>"	"<div><b>Creation Time</b> – Wann die Datei erstellt wurde. </div>
+<div><b>• Modified Time </b>– Wann wurde der Inhalt der
+Datei/Verzeichnis modifiziert. </div>
+<div>• <b>MFT Modified Time</b> – Wann wurde der MFT Eintrag
+(Metadaten) zuletzt modifiziert. • <b>Access Time</b> – Wann wurde zuletzt auf
+diese Datei zugegriffen – (Bei aktuellen Windows Systemen aus
+Performancegründen deaktiviert)</div>"	
+"<div>Was sind Alternative Data Streams
+(ADS)</div>"	"<div>• Ein Data Stream ist eine zusammengehörende Sequenz von
+Bytes. </div>
+<div>• NTFS unterstützt mehrere Data Streams gleichzeitig. </div>
+<div>• Der Name des Data Streams identifiziert ein neues $Data
+Attribut der Datei. </div>
+<div>• Jede Dateien besitzt einen „main“ Data Stream. </div>
+<div>• „main“ Data Stream ist für alle Dateisysteme sichtbar. </div>
+<div>• Alternative Data Streams sind nur für NTFS sichtbar. Wenn
+eine Datei von einem NTFS-Dateisystem auf ein FATDateisystem kopiert wird,
+gehen alternative Data Streams verloren.</div>"	
+"<div>Für was können ADS missbraucht
+werden?</div>"	"<div>• Kann zum „verstecken“ von Daten verwendet werden. </div>
+<div>• Ist nicht im Windows Dateiexplorer sichtbar.</div>
+<div>&nbsp;• Der MFT Entry
+enthält mehrere $DATA Attribute</div>"	
+"<div>Was ist der Unterschied zwischen
+Sektor und Cluster?</div>"	"<div><b>Sektor:</b></div>
+<div>&nbsp;• Daten werden auf
+der Festplatte in Sektoren (=Blöcke) gespeichert </div>
+<div>• Kleinste Einheit welche vom Betriebssystem adressiert
+werden kann </div>
+<div>• 512Byte bzw. 4kByte</div>
+<div><b>Cluster: </b></div>
+<div>• Betriebssystem fasst über das Dateisystem der Partition
+mehrere Sektoren zu einen Cluster zusammen </div>
+<div>• Clustergröße ist immer ein vielfaches eines Sektors</div>"	
+<div>Was ist ein Cluster?</div>	"<div>• Ein Cluster ist eine logische Zusammenfassung von Sektoren
+eines Datenträgers.</div>
+<div>&nbsp;• Das Dateisystem
+kann im Allgemeinen nur vollständige Cluster adressieren. </div>
+<div>• Daher belegen Dateien auf einem Datenträger immer eine
+ganzzahlige Menge von Clustern.</div>"	
+<div>Je größer der Cluster desto?</div>	"<div>– desto weniger Verwaltungsaufwand muss für große Dateien
+aufgewendet werden</div>
+<div>&nbsp;– desto geringer wird
+die Fragmentierung einer Datei </div>
+<div>– jedoch, sind größere Cluster im Hinblick auf die
+rationelle Ausnutzung des Speicherplatzes eines Datenträgers nachteilig,
+insbesondere bei der Speicherung einer großen Zahl kleiner Dateien.</div>"	
+<div>Was ist File-Slack?</div>	"<div>• freier Speicherbereich innerhalb eines Clusters </div>
+<div>• File-Slack = RAM-Slack + Drive-Slack</div>"	
+<div>Was ist Ram-SLACK?</div>	"<div>• Letzter Sektor einer Datei wird aufgefüllt </div>
+<div>• Willkürlich Daten aus dem RAM verwendet (früher)</div>"	
+<div>Was ist Drive-Slack?</div>	<div>• Bestehende Daten; werden nicht überschrieben</div>	
+"<div>Was sind Ursachen für
+Fragmentierung?</div>"	"<div>• Dateiänderung – Vergrößerung – Verkleinerung – Löschung</div>
+<div>&nbsp;• Geringer
+Speicherplatz = Hoher Fragmentierungsgrad</div>"	
+RAM/DRIVE/FILE Slack visualisiert	"<img src=""paste-e92c94ff56fedce9d1371925413759eae02d45d6.jpg"">"	
+"<div>Welche Spuren können bei der
+IT-Forensik analysiert werden?</div>"	"<div>• Datei-Download </div>
+<div>• Ausführen von Programmen </div>
+<div>• Öffnen von Dateien / Verzeichnissen </div>
+<div>• Ehemals existente Dateien </div>
+<div>• Positionsdaten </div>
+<div>• Externe Geräte (USB Devices) </div>
+<div>• Anmeldeinformationen</div>
+<div>&nbsp;• Internet Browser</div>"	
+"<div>Welche Art von Daten kann
+wiederhergestellt werden ?</div>"	"<div><b>• Partition –</b> Ganze System- oder Datenpartition einer
+Festplatte</div>
+<div>&nbsp;• <b>Daten aus dem
+Dateisystem</b> – Dokumente, Bilder, Videos, Audio-Dateien, …</div>
+<div>&nbsp;•<b> Anwendungsdaten</b>
+– Mails aus OST-/PST-Dateien – Einträge aus Datenbanken</div>"	
+<div>Was ist eine Dateierweiterung?</div>	"<div>Eine Dateierweiterung ist der Teil des Dateinamens, der
+hinter dem letzten Punkt steht. Sie dient als Indikator für die Art der Datei
+und wird von Betriebssystemen verwendet, um zu entscheiden, welches Programm
+zum Öffnen der Datei verwendet werden soll. Beispielsweise deuten .txt, .jpg,
+oder .docx darauf hin, dass es sich um eine Textdatei, ein JPEG-Bild oder ein
+Microsoft Word-Dokument handelt.</div>
+<div>Dateierweiterungen sind für Benutzer leicht sichtbar und
+können manuell geändert werden, was jedoch in der Regel nichts am eigentlichen
+Inhalt oder Typ der Datei ändert. Eine Änderung der Erweiterung kann dazu
+führen, dass das Betriebssystem die Datei nicht mehr korrekt öffnen kann, da
+die zugeordnete Anwendung nicht zum tatsächlichen Dateiformat passt.</div>"	
+<div>Was ist ein Dateityp?</div>	"<div>Der Dateityp hingegen beschreibt das tatsächliche Format und
+die Struktur der Daten innerhalb der Datei. Der Dateityp wird normalerweise
+durch die Dateisignatur oder den Dateiheader bestimmt, wie vorher erläutert.
+Diese internen Markierungen sind weniger anfällig für manuelle Änderungen, da
+sie sich im Binärinhalt der Datei befinden.</div>
+<div>Der Dateityp bestimmt, wie die Daten kodiert, gespeichert
+und gelesen werden und ist entscheidend dafür, ob Software in der Lage ist, die
+Datei korrekt zu verarbeiten. Unabhängig von der Dateierweiterung bleibt der
+Dateityp derselbe, es sei denn, die Datei wird mit entsprechender Software
+konvertiert.</div>"	
+<div>Was ist eine Dateisignatur?</div>	"<div>Eine Dateisignatur, auch bekannt als ""magic
+number"" oder ""magic bytes"", ist eine spezifische Folge von Bytes
+am Anfang einer Datei, die den Dateityp identifiziert. Diese Signaturen sind
+wie eine Art ""digitaler Fingerabdruck"", der Aufschluss darüber gibt,
+mit welchem Dateiformat oder Dateityp man es zu tun hat. Diese Informationen
+sind besonders nützlich in der Forensik, um Dateien zu kategorisieren und
+gegebenenfalls zu reparieren oder zu analysieren, selbst wenn die Dateierweiterung
+manipuliert oder gelöscht wurde. Beispielsweise hat eine JPEG-Datei
+typischerweise die Dateisignatur FF D8 FF, während eine PDF-Datei mit %PDF
+beginnt. Diese Signaturen helfen Ermittlern, Dateien korrekt zu identifizieren,
+auch wenn Nutzer versucht haben, durch Umbenennung einer Datei zu verschleiern,
+was sie wirklich ist.</div>"	
+<div>Was ist ein Dateiheader?</div>	"<div>Ein Dateiheader ist ein Abschnitt einer Datei, der am Anfang
+platziert ist und Metadaten </div>
+<div>über die Datei enthält. Diese Metadaten können Informationen
+wie Dateigröße, Dateischöpfungsdatum, Softwareversion, die die Datei erzeugt
+hat, oder andere spezifikationsspezifische Daten umfassen. Dateiheader sind
+wichtig, weil sie nicht nur den Dateityp bestätigen können, sondern auch
+zusätzliche Kontextinformationen liefern können, die in einer digitalen
+Untersuchung von Bedeutung sein können. Im Bereich der Forensik werden
+Dateiheaders verwendet, um Anomalien oder Abweichungen festzustellen. Wenn der
+Header einer Datei nicht mit der Dateisignatur oder mit der erwarteten internen
+Struktur übereinstimmt, könnte dies ein Hinweis auf Manipulation oder korrupte
+Dateien (zB Durch Recovery) sein.</div>"	
+<div>Was ist File Carving?</div>	"<div>• File Carving ist eine forensische Technik zum
+Wiederherstellen von Dateien. </div>
+<div>• Die Wiederherstellung basiert auf File-Strukturen und
+deren Inhalt und nicht auf Metadaten des Filesystems.</div>"	
+"<div>Was ist der Sinn und Zweck von
+Filecarving?</div>"	"<div>Wiederherstellung von Dateien </div>
+<div>– basiert auf File Struktur</div>
+<div>&nbsp;– bei unbekannter
+Filesystem-Struktur </div>
+<div>– bei manipulierten/gelöschten Filesystem-Metadaten</div>"	
+"<div>Welche Arten von File Carving gibt
+es?</div>"	"<div>Header / Footer Carving</div>
+<div>Header/Embedded Length Carving</div>
+<div>Header/Maximum Size Carving</div>"	
+<div>Was ist&nbsp; Header / Footer Carving</div>	"<div>• Identifikation von Header und Footer über Erkennung
+spezieller Byte-Zeichenfolgen </div>
+<div>• Byte-Zeichen dazwischen werden als Datei interpretiert</div>"	
+"<div>Was ist Header/Embedded Length
+Carving</div>"	"<div>• Identifiziert Header einer Datei </div>
+<div>• Datei wird über Länge, die im Dateiheader angegeben ist
+identifiziert</div>"	
+<div>Was ist Header/Maximum Size Carving</div>	"<div>• Identifiziert Header einer Datei</div>
+<div>&nbsp;• Datei wird über
+angenommene Länge des Dateityps identifiziert </div>
+<div>• Länge basiert auf Erfahrungswerten und führt oft zu sehr
+großen Dateien</div>"	
+<div>Was sind Probleme bei File Carving?</div>	"<div>Viele unterschiedliche Dateiformate welche bei der
+Wiederherstellung erkannt werden müssen</div>
+<div>Fragmentierung</div>
+<div>• Identifikation relevanter Daten</div>
+<div>• Zeitaufwand und Komplexität =&gt; Bit für bit lesen ist
+langsam</div>
+<div>• Integrität der Dateien kann nicht gewährleistet werden</div>"	
+"<div>Welche Vor/Nachteile bietet die
+Analyse mit nicht forensischer Software (z.B. TreeSize, Windows Explorer, …)</div>"	"<div><b>Vorteile</b>: • Sehr flexible einsetzbar. Geringe Kosten.
+• Einfach bedienbar.</div>
+<div><b>Nachteile:</b></div>
+<div>• Analyse basierend auf Dateiendungen (XYZ.docx). Keine
+Typverifizierung möglich.</div>
+<div>• Möglicherweise Probleme mit zu langen Pfaden.</div>
+<div>• Unter Umständen versteckte Dateien nicht sichtbar bzw.
+Dateien im ADS nicht sichtbar.</div>
+<div>• Keine automatische Analyse von Dateien in Archiven
+möglich.</div>
+<div>• Möglicherweise Probleme mit den Zugriffsrechten.</div>"	
+"<div>Welche Vor/Nachteile bietet die
+Analyse mit&nbsp; forensischer Software</div>"	"<div><b>Vorteile</b></div>
+<div>• Analyse basierend auf tatsächlichem Dateityp möglich.</div>
+<div>&nbsp;•
+Dateiwiederherstellung von gelöschten Dateien möglich.</div>
+<div>&nbsp;• Keine Probleme mit
+zu langen Pfaden. </div>
+<div>• Analyse von Dateien innerhalb von Archiven möglich. </div>
+<div>• Identifikation von versteckten Dateien (z.B. ADS) </div>
+<div>• Keine Einschränkungen durch Zugriffsrechte.</div>
+<div><b>Nachteile:</b> • Kosten • Durchlaufzeit</div>"	
+"<div>Auf welche Art können Daten
+Gesichert werden?</div>"	"<div>•<b>
+Collection</b>: Mitnahme bzw. Ausbau des gesamten Geräts oder Datenträgers </div>
+<div>• <b>Acquisition</b>:
+Datensicherung des Datenträgers bzw. Geräts</div>"	
+"<div>In welcher Reihenfolge sollen
+Daten Gesichechert werden?</div>"	"<div>1.
+Routingtabellen, ARP-Cache, Prozessliste, angemeldete User, Netzstatus,
+Kerneldaten, Hauptspeicherinhalt (RAM) </div>
+<div>2. Temporäre
+Daten, SWAP-Bereiche etc. 3. Der komplette Inhalt der Datenträger </div>
+<div>4. Relevante
+Logging und Monitoringdaten auf zentralen Loggingservern </div>
+<div>5. Physische
+Konfigurationen und Netzwerktopologien</div>
+<div>&nbsp;6. Archivierte Medien</div>"	
+"<div>Wie geht man vor bei Collection als
+Sicherungsart?</div>"	"<div>• Mitnahme
+des gesamten Beweismittels zur weiteren Sicherung, Analyse bzw. Verwahrung.</div>
+<div>&nbsp;• Dokumentation des IST-Zustandes (Fotos,
+Skizzen) und aller Aktionen die durchgeführt werden! </div>
+<div>• Manchmal
+kann die Veränderung des Mediums bei der Collection nicht ausgeschlossen werden
+(z.B. Herunterfahren eines Servers</div>
+<div>Nach dem
+Ausbau: </div>
+<div>–
+Beschriftung des Datenträgers (bspw. durch Sticker) </div>
+<div>– Sichere
+Verpackung (Stoßsicher und vor Veränderung geschützt bspw. Versiegelung)</div>
+<div>&nbsp;– Chain of Custody Dokumentation (Wer, Was,
+Wann, Wo, Wohin etc.)</div>"	
+"<div>Wie geht man vor bei Acquisition als
+Sicherungsart?</div>"	"<div>• Erstellen
+von Datensicherungen des Beweismittels </div>
+<div>– Original-Datenträger verbleibt üblicherweise nicht beim
+Forensiker </div>
+<div>• Arten der
+Datensicherungen</div>
+<div>&nbsp;– Vollständige
+Datensicherung (1-zu-1 Kopie des Datenträgers oder Partition) </div>
+<div>– Logische Datensicherung (einzelne Verzeichnisse) </div>
+<div>•
+Vollständige Datensicherung ist zu bevorzugen (Warum?) </div>
+<div>•
+Vollständige Dokumentation: – IST-Zustand (Fotos, Screenshots etc.) </div>
+<div>– Eingesetzte Tools (inkl. Version) – Befehle und Ausgabe
+des Tools</div>"	
+"<div>Wieso könnten Verschlüsselte
+Datenträger mit vollständigen Datensicherung Probleme bereiten?</div>"	"<div>– Passwort
+ev. nicht bekannt </div>
+<div>– Kann das
+Analyseprogramm mit der Verschlüsselung umgehen (z.B. LUKS, Bitlocker, WinMagic
+etc.) </div>
+<div>– Image muss
+vor der Weiterverarbeitung ev. entschlüsselt werden</div>"	
+<div>Was ist ein Raw-Image RAW DD?</div>	"<div>• Einfaches
+1-zu-1 Abbild des Datenträgers bzw. Partition </div>
+<div>• Erstellung
+bspw. mithilfe von DD (Linux)</div>
+<div>&nbsp;• Keine Prüfsummen</div>
+<div>&nbsp;• Keine Komprimierung</div>"	
+"<div>Was ist ein Forensisches
+Disk-Image-Format?</div>"	"<div>• Speziell für forensische Datensicherungen entwickelt
+(Logging, Integritätsprüfung etc.) • „Container“ für das 1-zu-1 Abbild </div>
+<div>• Speichert zusätzliche Informationen </div>
+<div>• Unterstützt Prüfsummen, Komprimierung, Verschlüsselung,
+Splitting in mehrere Dateien</div>"	
+<div>Was ist Logische Datensicherung?</div>	"<div>• Es werden nur bestimmte Verzeichnisse bzw. Dateien
+gesichert</div>
+<div>&nbsp;• Enthält keine nicht
+belegten Speicherbereiche und Slack-Spaces </div>
+<div>• Beim Sichern müssen Filesystem-Berechtigungen beachtet
+werden (Berechtigungsprobleme!)</div>"	
+"<div>Wann wird Logische Datensicherung
+Verwendet?</div>"	"<div>– zu viele Daten um alles zu sichern (bspw. Netzlaufwerke,
+Datenbankserver) </div>
+<div>– nur sehr wenige Daten müssen gesichert werden </div>
+<div>– System ist zu wichtig zum Ausschalten </div>
+<div>– vollständige Datensicherung nicht möglich (z.B.
+verschlüsseltes System ohne bekanntes Passwort)</div>
+<div>&nbsp;– gesetzliche
+Einschränkungen </div>
+<div>– System enthält Daten von mehreren Kunden</div>"	
+"<div>Was ist nach der Datensicherung zu
+tun`?</div>"	"<div><b>Verifikation der Datensicherung</b></div>
+<div>• Prüfsumme (MD5 bzw. SHA1) der
+Datensicherung und des originalen Datenträgers </div>
+<div>• Stimmen die Prüfsummen überein,
+war die Datensicherung erfolgreich</div>
+<div><b>Die Verifikation kann anschließend bei Bedarf immer
+wieder durchgeführt werden</b></div>
+<div>• Vor allem nach jedem Kopieren
+über unterschiedliche Medien hinweg (bspw. von USB-Festplatte auf
+Netzlaufwerk), sollte die Integrität überprüft werden</div>
+<div><b>Versiegelung des Datenträgers (falls notwendig bzw.
+möglich)</b></div>
+<div><b>&nbsp;Dokumentation der
+durchgeführten Arbeitsschritte</b></div>
+<div><b>&nbsp;Backups der
+Datensicherung erstellen!!</b></div>"	
+"<div>Wie schaut die Datensicherung
+Quick-Checkliste aus?</div>"	"<div>1. Zu sicherndes Speichermedium identifizieren
+(Seriennummer, Bezeichnung, Typ etc.) und dokumentieren (Fotos) </div>
+<div>2. Zu sicherndes Speichermedium an Write Blocker anschließen
+und beides einschalten </div>
+<div>3. Write Blocker an Analysesystem hängen </div>
+<div>4. Datensicherung mit dem gewählten Tool durchführen und
+dokumentieren (Screenshots) </div>
+<div>5. Hashwerte überprüfen (zumeist Toolgestützt) </div>
+<div>6. Disken entfernen und Write Blocker ausschalten </div>
+<div>7. Beweismittel in Beweismittelbeutel lagern </div>
+<div>8. Sicherstellen, dass alles vollständig dokumentiert wurden
+(Seriennummer, Hashwerte, verwendete Software, involvierte Personen etc.)</div>"	
+MFT ist wie Konturiert	Hat einträge (MFT-Record/Entry oder File-Record/Entry)	
+Welche 2 Arten von Formatieren gibt es?=&gt;	Quickformat, Vollformat	
+Wie wird der MFT initialisiert?	von 0 bis 255 =&gt; werden einträge eingefügt aber nicht alle beschrieben nur well known Files	
+Welche Interesanten Dateien sind im MFT?	&gt;MFT Entry Bitmap, Cluster Bitmap,	
+Aus was besteht MFT Entry? =&gt;	MFT Header | [Atrribute Header | Attribute Value]	
+Welche arten von Header Infors gibt es?	Resident= Daten im MFT Entry / Non Resident Header == Verweis auf Cluster da in MFT Entry zu wenig Platz	
+Was ist intereesant beim MFT Entry Header?	"Fängt immer mit ""FILE"" an"	
+Welche 2. Arten von Carving?	File/MFT Header Carving, File Header Signatur Carving	
+Wann wird welche Art von Carving verwendet?	File/MFT Header Carving =&gt; wird in MFT Zone verwendet (Deshalb auch wichtig das MFT Entry Header mit FILE anfängt das er sie findet)	
+Wenn eine Datei gelöscht wird was ändert sich dann im MFT Entry Header?	=&gt;&nbsp; Flag = not in us wird auf (0x00)&nbsp;geändert und in der Cluster Bitmap wird die Referenz auf die Cluster auf 0 gesetz	
+Warum kann es trotzdem eine Zeit lang dauern wenn eine Datei gelöscht wird obwohl nur Flag geändert wird? =&gt;	SSD/HDD machen unterschied ebenfalls TRIM befehl, und wenn windows dann wird datei in Papierkorb verschoben	
+Was macht der TRIM befehl	&gt;Mit dem TRIM befehl gibt das OS dem Festplattencontroller die Möglichkeit den Speicherbereich wieder freizugeben	
+Was unterscheidet FILE Entry von DIR Entry	File Entry hat Standard info Filename 2x $Data anderer aufbau hald	
+MFT Entry Attrbiute Header Resident vs Non Resident =&gt;	In Resident sind Daten dahinter in Non Resident Run List.	
+Warum gibt es welche Zeitstemplel welche gibt es	Modify, datacnate,Access)	
+was ist ein alternative Data Stream?	$DATA refernziert auf FILE-Content dieser Refernziert wieder auf Cluster im Filesystem	
+Was ist der Sektor/Block am Datenträger	Kleinste Einheit welche VOM OS addresiert werden kann, liegen überlicherweise auf Festplatte	
+Was ist ein Cluster in NTFS =	Virtuelle zugriffseinheit auf die Gemappt wird wichtig bei File Carving wegen	
+Wann wähle ich die Sektorgröße	Beim Kauf der Fesplatte	
+Was is der Unterschied Linearer und nicht Linearer Fragmentierung?	Wie eine Datei im Speicher abgelegt wird, Linear alles hintereinand Liner nicht Linear nicht hintereinand	
+Was ist File Carvin	File Carving beschreibt eine Vielzahl an techniken und Vorgehensweisen um Daten wiederherstellen zu können	
+Dateityp vs. Erweiterung:	Nur Optisch, Dateityp=&gt; Tatsächliches Format	
+Wo kann File Signatur stehen?	Am Anfang von Cluster wo sie reingeschreiben wurde =&gt; Bei File Carving wird nur Cluster anfang gecarved Außer File anfang liegt nicht am anfang des Cluster, 2KB große Cluster Reformat mit 4KB Große Cluster	
+Was steht im $DATA header attribut	"<pre>$DATA:
+        - resident header
+                - 
+        - non resident header
+                - verweiß auf Cluster (dafür wird runlist benötigt)</pre>"	
+Welche Arten von FIle Carving gibt es?<br>	"<pre>Carving:
+    - file record carving (MFT Carving)
+        - in der MFT Zone betreiben
+            - Auf Signatur von File Entry sehen
+            - Datenbank wird druchloffen
+    - file header singature carving</pre>"	
+<pre>Wenn Datei gelöscht wird, was ändert sich konkret im MFT Entry:</pre>	"<pre>Welche änderungen von OS in Entry druchgeführt.
+    - Not in use (0x00) wird gechanged als Byte (im MFT Entry Header)
+    - Und in $BITMAP File wird die Referenz auf die 2 Cluster auf 0 gesetzt</pre>"	
+<pre>Alternative Data Stream (ADS):</pre>	"<pre>    - File-Content referenziert (auf Datei selbst)
+    - Ist das selbe wie Referenz auf Datei nur mit ':' hinter Dateinamen
+    - bsp: Internet Download -&gt; Datei in ADS Metadaten Infos angehängt woher sie kommt (Internet)
+        - Popup -&gt; sicher ausführen? weil internet</pre>"	
+<pre>Sector vs Cluster:</pre>	"<pre>Sector vs Cluster:
+    Block (Sector) am Datenträger:
+        - Kleinste Einheit, die vom OS addressiert werden kann 512 Bytes
+    Cluster in windows NTFS:
+        - virtuelle Zuordnung von Windows
+        - Cluster 4 Blöcke
+        - Wichtig fürs File carving
+        - Schlupfspeicher
+        - wichtig!!! -&gt; jeder Klausur
+        - Grafik textuell beschreiben können [31]
+        - einfach rechnen?
+            - keine komplexen Rechnungen
+        - RAM Slack / Drive Slack
+            - Drive Slack war schon dort im Cluster
+            Restlicher Speicher (Drive Slack im Cluster ist nicht verwendbar bis Datei freigegeben/gelöscht wird)</pre>"	
+<pre>Spuren die analysiert werden können -&gt;</pre>	<pre>Artefakte ...</pre>	
+<pre>Datei kann nur am Anfang vom Cluster anfangen</pre>	"<pre>    Dateianfang kann innerhalb eines Clusters liegen 
+    -&gt; Dateisystem mit 2KB formatieren, Dateien anlegen
+    -&gt; dann 4KB formatieren, dann Datei kann auf hälfte des Clusters anfangen</pre>"	
+<pre>keine Analysehandlungen auf originalsystemen durchführen</pre>	"<pre>manipuliert Daten
+    -&gt; Ausnahme Memory Dump (nur dort ausführbar)
+</pre>"	
+<pre>Windows Explorer kein forensisches Tool?</pre>	<pre>wegen Einschränkungen wie Pfadlänge</pre>	
+<pre>Alternative Data Stream -</pre>	"<pre>in NTFS Dateisystem kann man zu einer Datei 
+unterschiedlichste Dateien anhängen auch im Sinne von Content man kann andere 
+Binärdaten ergänzen. Diese Dateien sieht man im Windows Explorer nicht</pre>"	
+"<pre>## Wo kann man IT Forensik in der Praxis unterstützen?</pre>"	"<pre>- Datendiebstahl
+- Cyber-Kriminalität</pre>"	
+"<pre>## Ziele der Ermittlungen (kommt auf Fall an)</pre>"	"<pre>- Schwachstelle identifizieren
+- Wiederherstellung
+- identifikation Angreifer
+- Data recovery</pre>"	
+"<pre># Negativbeispiele</pre>"	"<pre>schwer zu erbringen. Nur unter angabe verwendeter Tools wurden keine Hinweise 
+gefunden. Ist schwer gegenteil zu beweisen
+</pre>"	
